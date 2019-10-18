@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.loanmart.mainwebsite.ApplyForLoan]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.loanmart.mainwebsite.ApplyForLoan">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="setUpClass"/>
+          <include name="ApplyForLoanTest" invocation-numbers="1"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- com.loanmart.mainwebsite.ApplyForLoan -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.loanmart.mainwebsite.ApplyForLoan] -->

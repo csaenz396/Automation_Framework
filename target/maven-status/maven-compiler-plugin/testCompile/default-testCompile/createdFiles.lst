@@ -1,0 +1,5 @@
+com\loanmart\mainwebsite\ApplyForLoan.class
+com\loanmart\pages\mainwebsite\ContactInformationPage.class
+com\loanmart\utilities\TestUtil.class
+com\loanmart\base\TestBase.class
+com\loanmart\utilities\ExcelReader.class
