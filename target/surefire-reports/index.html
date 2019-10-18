@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-com.loanmart.mainwebsite.ApplyForLoan" title="com.loanmart.mainwebsite.ApplyForLoan" hash-for-method="ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...)">ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.loanmart.mainwebsite.ApplyForLoan" title="com.loanmart.mainwebsite.ApplyForLoan" hash-for-method="ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa1@loanmart.com, MortgageRent=1200, CarMi...)">ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa1@loanmart.com, MortgageRent=1200, CarMi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-com.loanmart.mainwebsite.ApplyForLoan -->
@@ -128,7 +133,15 @@
                   <a name="ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...)">
                   </a> <!-- ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...) -->
                   <span class="method-name">ApplyForLoanTest</span>
-                  <span class="parameters">({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, CarMileage=40000, DoYouHaveAnAutomobile=Yes, ESignedConsent=Yes, FICO=787, DOB=11/12/1978, GrossIncome=5000, LivedMonths=4, FirstName=Marc, CarStyle=4D SUV FWD - Base, ZipCode=91302, LivedYears=10, Terms=Yes, CarYear=2016, OtherIncome=1000, City=Calabasas, HomeNumber=8189794827, SSN=666367098, CarMake=Acura, CarModel=RDX, MobileNumber=8188766573, StreetAddress=4050 Old Topanga Canyon Rd, ThirdPartiesConsent=Yes, State=California, LastName=Alderson})</span>
+                  <span class="parameters">({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, CarMileage=40000, DoYouHaveAnAutomobile=Yes, ESignedConsent=Yes, FICO=787, DOB=11/12/1978, GrossIncome=5000, LivedMonths=4, FirstName=Marc, CarStyle=4D SUV AWD - Base, ZipCode=91302, LivedYears=10, Terms=Yes, CarYear=2016, OtherIncome=1000, City=Calabasas, HomeNumber=8189794827, SSN=666367098, CarMake=Acura, CarModel=RDX, MobileNumber=8188766573, StreetAddress=4050 Old Topanga Canyon Rd, ThirdPartiesConsent=Yes, State=California, LastName=Alderson})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa1@loanmart.com, MortgageRent=1200, CarMi...)">
+                  </a> <!-- ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa1@loanmart.com, MortgageRent=1200, CarMi...) -->
+                  <span class="method-name">ApplyForLoanTest</span>
+                  <span class="parameters">({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa1@loanmart.com, MortgageRent=1200, CarMileage=40000, DoYouHaveAnAutomobile=Yes, ESignedConsent=Yes, FICO=800, DOB=11/12/1978, GrossIncome=5000, LivedMonths=4, FirstName=Jul, CarStyle=4D SUV AWD - Base, ZipCode=91302, LivedYears=10, Terms=Yes, CarYear=2016, OtherIncome=1000, City=Calabasas, HomeNumber=8189794827, SSN=666367098, CarMake=Acura, CarModel=RDX, MobileNumber=8188766573, StreetAddress=4050 Old Topanga Canyon Rd, ThirdPartiesConsent=Yes, State=California, LastName=Aled})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,16 +202,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ApplyForLoanTest')
 data.setCell(0, 2, 'com.loanmart.mainwebsite.ApplyForLoan')
-data.setCell(0, 3, 13388);
+data.setCell(0, 3, 53175);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ApplyForLoanTest')
+data.setCell(1, 2, 'com.loanmart.mainwebsite.ApplyForLoan')
+data.setCell(1, 3, 28996);
 window.suiteTableData['com.loanmart.mainwebsite.ApplyForLoan']= { tableData: data, tableDiv: 'times-div-com.loanmart.mainwebsite.ApplyForLoan'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-com.loanmart.mainwebsite.ApplyForLoan">
               </div> <!-- times-div-com.loanmart.mainwebsite.ApplyForLoan -->
             </div> <!-- times-div -->
@@ -231,15 +248,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">3765 ms</span>
+                <span class="method-start">3947 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">3787 ms</span>
+                <span class="method-start">3971 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...)</span>
-                <span class="method-start">6431 ms</span>
+                <span class="method-start">6193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">59369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa1@loanmart.com, MortgageRent=1200, CarMi...)</span>
+                <span class="method-start">60210 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

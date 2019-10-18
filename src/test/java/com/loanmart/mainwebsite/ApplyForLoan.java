@@ -10,6 +10,7 @@ import com.loanmart.base.TestBase;
 import com.loanmart.pages.mainwebsite.AddressInformationPage;
 import com.loanmart.pages.mainwebsite.ContactInformationPage;
 import com.loanmart.pages.mainwebsite.CustomizeYourOfferPage;
+import com.loanmart.pages.mainwebsite.SuccessPage;
 import com.loanmart.pages.mainwebsite.VehicleInformationPage;
 import com.loanmart.utilities.TestUtil;
 
@@ -21,6 +22,7 @@ public class ApplyForLoan extends TestBase {
 	private VehicleInformationPage vehicleInformationPage;
 	private AddressInformationPage addressInformationPage;
 	private CustomizeYourOfferPage customizeYourOfferPage;
+	private SuccessPage successPage;
 	private String testURL;
 	
 	
@@ -36,6 +38,7 @@ public class ApplyForLoan extends TestBase {
 		vehicleInformationPage = new VehicleInformationPage(driver);
 		addressInformationPage = new AddressInformationPage(driver);
 		customizeYourOfferPage = new CustomizeYourOfferPage(driver);
+		successPage = new SuccessPage(driver);
 	}
 	
 	@BeforeMethod
@@ -99,6 +102,11 @@ public class ApplyForLoan extends TestBase {
 
 
 		log.debug("Customize Your Offer successfully Submitted");
+		
+		customizeYourOfferPage.clickSubmitAndGetMoneyButton();
+		successPage.waitForSuccessPageLoad();
+		log.debug("Inside Success Page");
+		System.out.println("**********LOAN NUMBER"+successPage.getLoanNumber()+"********************************");
 	}
 
 }

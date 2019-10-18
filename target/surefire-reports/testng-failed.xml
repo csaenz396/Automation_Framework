@@ -7,7 +7,7 @@
         <methods>
           <include name="launchBrowser"/>
           <include name="setUpClass"/>
-          <include name="ApplyForLoanTest" invocation-numbers="1"/>
+          <include name="ApplyForLoanTest" invocation-numbers="0 1"/>
           <include name="setUpSuite"/>
         </methods>
       </class> <!-- com.loanmart.mainwebsite.ApplyForLoan -->
