@@ -30,7 +30,8 @@ public class TestUtil extends TestBase{
 	@DataProvider(name = "dp")
 	public Object[][] getData(Method m){
 		List<HashMap<String,String>> information = new ArrayList<HashMap<String,String>>();
-		information = excel.getDataFromExcelFile(1);
+		information = excel.getDataFromExcelFile(2);
+		System.out.println(information);
 		
 		Object[][] data  =  new Object[information.size()][1];
 		int[] counter = {0};

@@ -14,20 +14,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 
 import com.loanmart.utilities.ExcelReader;
 import com.loanmart.utilities.TestUtil;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class TestBase {
-	
+
 	public static WebDriver driver;
 	private ChromeOptions chromeOptions = new ChromeOptions();
 	public static FileInputStream fis;
@@ -35,7 +34,7 @@ public class TestBase {
 	public static Properties config = new Properties();
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static ExcelReader excel = new ExcelReader();
-	
+
 	@BeforeSuite
 	public void setUpSuite() {
 		System.out.println("************************INSIDE BEFORE CLASS******************************");
@@ -83,9 +82,9 @@ public class TestBase {
 					TimeUnit.SECONDS);
 			wait = new WebDriverWait(driver, 240);
 		}
-		
+
 	}
-	
+
 	public static WebElement webElement(By by) {
 		try {
 			if (isElementVisible(by, "" + by, "noDisplayPassVerified")) {
@@ -96,10 +95,10 @@ public class TestBase {
 			return null;
 		}
 	}
-	
+
 	public static boolean isElementVisible(By by, String message, String... noDisplayPassVerified) {
 
-		if (isElementPresent(by, message,"noDisplayPassVerified")) {
+		if (isElementPresent(by, message, "noDisplayPassVerified")) {
 			if (driver.findElement(by).isDisplayed()) {
 				if (noDisplayPassVerified.length == 0) {
 					log.debug("Verified is visible: " + message);
@@ -114,12 +113,23 @@ public class TestBase {
 		} else
 			return false;
 	}
-	
+
+	public void clickLink(By by, String linkText) {
+		if (isTextVisible(by, linkText)) {
+			webElement(by).click();
+			log.info("Clicked Link => " + linkText);
+			/*
+			 * testQA.log(LogStatus.INFO, "Clicked Link => " + linkText);
+			 * testLocal.log(LogStatus.INFO, "Clicked Link => " + linkText);
+			 */
+		}
+	}
+
 	public static boolean isElementPresent(By by, String message, String... noDisplayPassVerified) {
 
 		try {
 			driver.findElement(by);
-			if (noDisplayPassVerified.length == 0) { //don't know what this does??
+			if (noDisplayPassVerified.length == 0) { // don't know what this does??
 				log.debug("Verified is present: " + message);
 
 			}
@@ -133,20 +143,29 @@ public class TestBase {
 			return false;
 		}
 	}
-	
-	public void setTextBox(By by, String value,String textBoxName) {
+
+	public void setTextBox(By by, String value, String textBoxName) {
 		if (isElementPresent(by, textBoxName, "noDisplayPassVerified")) {
-			if(textBoxName.equals("MobileNumber") || textBoxName.equals("HomeNumber") || textBoxName.equals("SSN")){//this is new code, added to the phone number fields.
+			if (textBoxName.equals("MobileNumber") || textBoxName.equals("HomeNumber") || textBoxName.equals("SSN")) {// this
+																														// is
+																														// new
+																														// code,
+																														// added
+																														// to
+																														// the
+																														// phone
+																														// number
+																														// fields.
 				webElement(by).click();
 				webElement(by).sendKeys(value);
-			}else {
+			} else {
 				webElement(by).sendKeys(value);
 			}
 			log.info("Entered => " + textBoxName + " = " + value);
 
 		}
 	}
-	
+
 	public void setDropDownFailPass(By by, String value, String dropDownName, String failMessage) {
 		WebElement dropdown = webElement(by);
 		Select select = new Select(dropdown);
@@ -162,8 +181,8 @@ public class TestBase {
 		}
 
 	}
-	
-	public void setDropDown(By by, String value, String dropDownName ) {
+
+	public void setDropDown(By by, String value, String dropDownName) {
 		WebElement dropdown;
 		dropdown = webElement(by);
 
@@ -175,19 +194,24 @@ public class TestBase {
 			TestUtil.captureScreenshot();
 			log.debug("FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
 			// Extent Reports
-			
+
 		}
 
 	}
-	
-	
+
 	public void clickButton(By by, String buttonName) {
 		if (isElementPresent(by, buttonName, "noDisplayPassVerified")) {
 			webElement(by).click();
 			log.info("Clicked Button => " + buttonName);
 		}
 	}
-	
+
+	public void waitForPageLoad(By by) {
+		log.debug("Waiting for visibility of => " + by.toString());
+		wait.until(ExpectedConditions.elementToBeClickable(by));
+		log.debug("Is now visibile => " + by.toString());
+	}
+
 	public static boolean isNotElementVisible(By by, String message, String... noDisplayPassVerified) {
 
 		try {
@@ -212,7 +236,7 @@ public class TestBase {
 			return true;
 		}
 	}
-	
+
 	public static boolean isTextVisible(By by, String text) {
 		if (isElementVisible(by, text, "noDisplayPassVerified")) {
 			return verifyEquals(text, getWebElementText(by));
@@ -247,12 +271,24 @@ public class TestBase {
 			return true;
 		}
 	}
-	
+
 	public static String getWebElementText(By by) {
 		return webElement(by).getText();
 	}
 	
-	public static Boolean verifyEquals(String expected, String actual ) {
+	public void clickButtonWhenClickable(By by, String buttonName) {
+		log.info("Waiting to be clickable => " + buttonName);
+		wait.until(ExpectedConditions.elementToBeClickable(by));
+		log.info("Is now clickable => " + buttonName);
+		webElement(by).click();
+		log.info("Clicked Button => " + buttonName);
+		/*
+		 * testQA.log(LogStatus.INFO, "Clicked Button => " + buttonName);
+		 * testLocal.log(LogStatus.INFO, "Clicked Button => " + buttonName);
+		 */
+	}
+
+	public static Boolean verifyEquals(String expected, String actual) {
 		if (!actual.equals(expected)) {
 			TestUtil.captureScreenshot();
 

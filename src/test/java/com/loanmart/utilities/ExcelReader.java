@@ -69,6 +69,7 @@ public class ExcelReader {
 	
 	private int getNumofActiveRows(int sheet) {
 		int totalNumberofCellsPerRow = workbook.getSheetAt(sheet).getPhysicalNumberOfRows();
+		System.out.println(totalNumberofCellsPerRow);
 		return totalNumberofCellsPerRow;
 	}
 	

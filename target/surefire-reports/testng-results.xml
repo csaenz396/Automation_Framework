@@ -1,44 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="com.loanmart.mainwebsite.ApplyForLoan" duration-ms="6688" started-at="2019-10-18T17:12:26Z" finished-at="2019-10-18T17:12:33Z">
+  <suite name="com.loanmart.mainwebsite.ApplyForLoan" duration-ms="16057" started-at="2019-10-18T20:30:29Z" finished-at="2019-10-18T20:30:45Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="6688" started-at="2019-10-18T17:12:26Z" finished-at="2019-10-18T17:12:33Z">
+    <test name="Command line test" duration-ms="16057" started-at="2019-10-18T20:30:29Z" finished-at="2019-10-18T20:30:45Z">
       <class name="com.loanmart.mainwebsite.ApplyForLoan">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@6f03482]" name="setUpSuite" is-config="true" duration-ms="3718" started-at="2019-10-18T10:12:23Z" finished-at="2019-10-18T10:12:26Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@62ddbd7e]" name="setUpSuite" is-config="true" duration-ms="3764" started-at="2019-10-18T13:30:25Z" finished-at="2019-10-18T13:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@6f03482]" name="setUpClass" is-config="true" duration-ms="3" started-at="2019-10-18T10:12:26Z" finished-at="2019-10-18T10:12:26Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@62ddbd7e]" name="setUpClass" is-config="true" duration-ms="4" started-at="2019-10-18T13:30:29Z" finished-at="2019-10-18T13:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@6f03482]" name="launchBrowser" is-config="true" duration-ms="2603" started-at="2019-10-18T10:12:26Z" finished-at="2019-10-18T10:12:29Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@62ddbd7e]" name="launchBrowser" is-config="true" duration-ms="2644" started-at="2019-10-18T13:30:29Z" finished-at="2019-10-18T13:30:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="ApplyForLoanTest(java.util.HashMap)[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@6f03482]" name="ApplyForLoanTest" duration-ms="1565" started-at="2019-10-18T10:12:29Z" data-provider="dp" finished-at="2019-10-18T10:12:30Z">
+        <test-method status="PASS" signature="ApplyForLoanTest(java.util.HashMap)[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@62ddbd7e]" name="ApplyForLoanTest" duration-ms="13388" started-at="2019-10-18T13:30:32Z" data-provider="dp" finished-at="2019-10-18T13:30:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Email=qa@800loanmart.com, ThirdPartiesConsent=Yes, FirstName=Marc, State=California, LastName=Alderson, DoYouHaveAnAutomobile=Yes, ESignedConsent=Yes, FICO=787}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ApplyForLoanTest -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@6f03482]" name="launchBrowser" is-config="true" duration-ms="1011" started-at="2019-10-18T10:12:30Z" finished-at="2019-10-18T10:12:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="ApplyForLoanTest(java.util.HashMap)[pri:0, instance:com.loanmart.mainwebsite.ApplyForLoan@6f03482]" name="ApplyForLoanTest" duration-ms="1489" started-at="2019-10-18T10:12:31Z" data-provider="dp" finished-at="2019-10-18T10:12:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Email=qa3@loanmart.com, ThirdPartiesConsent=Yes, FirstName=Landon, State=California, LastName=Pen, DoYouHaveAnAutomobile=Yes, ESignedConsent=Yes, FICO=800}]]>
+                <![CDATA[{ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, CarMileage=40000, DoYouHaveAnAutomobile=Yes, ESignedConsent=Yes, FICO=787, DOB=11/12/1978, GrossIncome=5000, LivedMonths=4, FirstName=Marc, CarStyle=4D SUV FWD - Base, ZipCode=91302, LivedYears=10, Terms=Yes, CarYear=2016, OtherIncome=1000, City=Calabasas, HomeNumber=8189794827, SSN=666367098, CarMake=Acura, CarModel=RDX, MobileNumber=8188766573, StreetAddress=4050 Old Topanga Canyon Rd, ThirdPartiesConsent=Yes, State=California, LastName=Alderson}]]>
               </value>
             </param>
           </params>
