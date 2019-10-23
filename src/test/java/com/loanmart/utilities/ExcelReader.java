@@ -37,6 +37,7 @@ public class ExcelReader {
 	public ExcelReader() {
 		filePath = "\\\\loanmart.com\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\TestData\\";
 		//sheetName = null;
+		//filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\";
 		try {
 			file = new FileInputStream(new File(filePath + "testdata.xlsx"));
 			workbook = new XSSFWorkbook(file);
@@ -73,20 +74,25 @@ public class ExcelReader {
 		return totalNumberofCellsPerRow;
 	}
 	
-	private XSSFSheet getSheetObject(int sheet) {
-		XSSFSheet sheetObj = workbook.getSheetAt(sheet);
+	private XSSFSheet getSheetObject(String sheetName) {
+		XSSFSheet sheetObj = workbook.getSheet(sheetName);
 		return sheetObj;
+	}
+	
+	private int getSheetIndex(String sheetName) {
+		int index = workbook.getSheetIndex(sheetName);
+		return index;
 	}
 	
 	public void clearData() {
 		data.clear();
 	}
 	
-	public List<HashMap<String, String>> getDataFromExcelFile(int sheetNum){
+	public List<HashMap<String, String>> getDataFromExcelFile(String sheetName){
 		List<HashMap<String, String>> allData = new ArrayList<HashMap<String, String>>();
-		sheet = getSheetObject(sheetNum);
-		int numberOfCellPerRow = getNumofCellsPerRow(sheetNum);
-		int numberofRows =  getNumofActiveRows(sheetNum);
+		sheet = getSheetObject(sheetName);
+		int numberOfCellPerRow = getNumofCellsPerRow(getSheetIndex(sheetName));
+		int numberofRows =  getNumofActiveRows(getSheetIndex(sheetName));
 		  
 		for(int row = 1; row < numberofRows; row ++) {
 			 String value = "";

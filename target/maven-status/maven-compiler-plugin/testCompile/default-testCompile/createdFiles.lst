@@ -1,5 +1,12 @@
+com\loanmart\mainwebsite\ApplyForLoanVTWO.class
+com\loanmart\listeners\CustomListeners.class
 com\loanmart\utilities\TestUtil.class
 com\loanmart\base\TestBase.class
+com\loanmart\utilities\ExtentManager.class
+com\loanmart\pages\mainwebsite\SuccessPage.class
+com\loanmart\pages\mainwebsite\CustomizeYourOfferPage.class
 com\loanmart\mainwebsite\ApplyForLoan.class
 com\loanmart\pages\mainwebsite\ContactInformationPage.class
 com\loanmart\utilities\ExcelReader.class
+com\loanmart\pages\mainwebsite\VehicleInformationPage.class
+com\loanmart\pages\mainwebsite\AddressInformationPage.class

@@ -213,4 +213,8 @@ public class ContactInformationPage extends TestBase {
 	public String getCcbStates() {
 		return ccbStates().getText();
 	}
+	
+	
+	//**************************************************************
+	
 }

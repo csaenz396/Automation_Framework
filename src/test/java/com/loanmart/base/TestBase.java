@@ -18,13 +18,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
 import com.loanmart.utilities.ExcelReader;
 import com.loanmart.utilities.TestUtil;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
+@Listeners(com.loanmart.listeners.CustomListeners.class)
 public class TestBase {
 
 	public static WebDriver driver;
@@ -34,10 +40,19 @@ public class TestBase {
 	public static Properties config = new Properties();
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static ExcelReader excel = new ExcelReader();
+	public static String rptName;
+	
+	public ExtentReports repQA;
+	public ExtentReports repLocal;
+	public static ExtentTest testQA;
+	public static ExtentTest testLocal;
+	public static String mileStone = System.getProperty("MILE_STONE");
+	public static String devEnvironment = System.getProperty("DEV_ENV");
 
-	@BeforeSuite
-	public void setUpSuite() {
+	@BeforeSuite(alwaysRun = true)
+	public void setUpSuite(ITestContext testName) {
 		System.out.println("************************INSIDE BEFORE CLASS******************************");
+		rptName = testName.getName();
 		if (driver == null) {
 			try {
 				fis = new FileInputStream(
@@ -60,12 +75,12 @@ public class TestBase {
 			} else if (config.getProperty("browser").equals("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
-				chromeOptions.addArguments("disable-infobars");
-				chromeOptions.addArguments("--incognito");
-				chromeOptions.addArguments("--disable-gpu");
-				chromeOptions.addArguments("--no-sandbox");
-				chromeOptions.addArguments("--allow-insecure-localhost");
-				chromeOptions.addArguments("--headless");
+				//chromeOptions.addArguments("disable-infobars");
+				//chromeOptions.addArguments("--incognito");
+				//chromeOptions.addArguments("--disable-gpu");
+				//chromeOptions.addArguments("--no-sandbox");
+				//chromeOptions.addArguments("--allow-insecure-localhost");
+				//chromeOptions.addArguments("--headless");
 				chromeOptions.addArguments("--window-size=1980,1080");
 				driver = new ChromeDriver(chromeOptions);
 				log.debug("Chrome Lunched.");
@@ -83,6 +98,13 @@ public class TestBase {
 			wait = new WebDriverWait(driver, 240);
 		}
 
+	}
+	
+	@AfterSuite
+	public void tearDownSuite() {
+		if (driver != null)
+			driver.quit();
+		log.debug("Class Test Execution completed");
 	}
 
 	public static WebElement webElement(By by) {
@@ -105,7 +127,7 @@ public class TestBase {
 				}
 				return true;
 			} else {
-				TestUtil.captureScreenshot();
+				TestUtil.captureScreenshot(rptName);
 				log.debug("FAIL=> is not visible : " + message);
 				// Extent Reports
 				return false;
@@ -131,37 +153,37 @@ public class TestBase {
 			driver.findElement(by);
 			if (noDisplayPassVerified.length == 0) { // don't know what this does??
 				log.debug("Verified is present: " + message);
+				testQA.log(LogStatus.PASS, "Verified is present: " + message);
+				testLocal.log(LogStatus.PASS, "Verified is present: " + message);
 
 			}
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 
-			TestUtil.captureScreenshot();
+			TestUtil.captureScreenshot(rptName);
 
 			log.debug("FAIL=> is not present: " + message);
 			// Extent Reports
+			testQA.log(LogStatus.FAIL, "FAIL=> is not present: " + message);
+			testQA.log(LogStatus.FAIL, testQA.addScreenCapture(TestUtil.screenshotPathQA+TestUtil.screenshotName));
+			
+			testLocal.log(LogStatus.FAIL, "FAIL=> is not present: " + message);
+			testLocal.log(LogStatus.FAIL, testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 			return false;
 		}
 	}
 
 	public void setTextBox(By by, String value, String textBoxName) {
 		if (isElementPresent(by, textBoxName, "noDisplayPassVerified")) {
-			if (textBoxName.equals("MobileNumber") || textBoxName.equals("HomeNumber") || textBoxName.equals("SSN")) {// this
-																														// is
-																														// new
-																														// code,
-																														// added
-																														// to
-																														// the
-																														// phone
-																														// number
-																														// fields.
+			if (textBoxName.equals("MobileNumber") || textBoxName.equals("HomeNumber") || textBoxName.equals("SSN")) {
 				webElement(by).click();
 				webElement(by).sendKeys(value);
 			} else {
 				webElement(by).sendKeys(value);
 			}
 			log.info("Entered => " + textBoxName + " = " + value);
+			testQA.log(LogStatus.INFO, "Entered => " + textBoxName + " = " + value);
+			testLocal.log(LogStatus.INFO, "Entered => " + textBoxName + " = " + value);
 
 		}
 	}
@@ -173,10 +195,16 @@ public class TestBase {
 		try {
 			select.selectByVisibleText(value);
 			log.debug("Selected from Dropdown => " + dropDownName + " = " + value);
+			testQA.log(LogStatus.INFO, "Selected from Dropdown => " + dropDownName + " = " + value);
+			testLocal.log(LogStatus.INFO, "Selected from Dropdown => " + dropDownName + " = " + value);
 		} catch (org.openqa.selenium.NoSuchElementException e) {
-			TestUtil.captureScreenshot();
+			TestUtil.captureScreenshot(rptName);
 			// Extent Reports
 			log.debug("FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
+			testQA.log(LogStatus.FAIL, "FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
+			testQA.log(LogStatus.FAIL, testQA.addScreenCapture(TestUtil.screenshotPathQA+TestUtil.screenshotName));
+			testLocal.log(LogStatus.FAIL, "FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
+			testLocal.log(LogStatus.FAIL, testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 			Assert.fail(failMessage);
 		}
 
@@ -190,10 +218,17 @@ public class TestBase {
 		try {
 			select.selectByVisibleText(value);
 			log.info("Selected from Dropdown => " + dropDownName + " = " + value);
+			testQA.log(LogStatus.INFO, "Selected from Dropdown => " + dropDownName + " = " + value);
+			testLocal.log(LogStatus.INFO, "Selected from Dropdown => " + dropDownName + " = " + value);
 		} catch (org.openqa.selenium.NoSuchElementException e) {
-			TestUtil.captureScreenshot();
+			TestUtil.captureScreenshot(rptName);
 			log.debug("FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
 			// Extent Reports
+			testQA.log(LogStatus.FAIL, "FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
+			testQA.log(LogStatus.FAIL, testQA.addScreenCapture(TestUtil.screenshotPathQA+TestUtil.screenshotName));
+			
+			testLocal.log(LogStatus.FAIL, "FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
+			testLocal.log(LogStatus.FAIL, testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 
 		}
 
@@ -203,6 +238,8 @@ public class TestBase {
 		if (isElementPresent(by, buttonName, "noDisplayPassVerified")) {
 			webElement(by).click();
 			log.info("Clicked Button => " + buttonName);
+			testQA.log(LogStatus.INFO, "Clicked Button => " + buttonName);
+			testLocal.log(LogStatus.INFO, "Clicked Button => " + buttonName);
 		}
 	}
 
@@ -216,15 +253,22 @@ public class TestBase {
 
 		try {
 			if (driver.findElement(by).isDisplayed()) {
-				TestUtil.captureScreenshot();
+				TestUtil.captureScreenshot(rptName);
 
 				log.debug("FAIL=> is visible : " + message);
 				// Extent Reports
+				testQA.log(LogStatus.FAIL, "FAIL=> is visible : " + message);
+				testQA.log(LogStatus.FAIL, testQA.addScreenCapture(TestUtil.screenshotPathQA+TestUtil.screenshotName));
+				
+				testLocal.log(LogStatus.FAIL, "FAIL=> is visible : " + message);
+				testLocal.log(LogStatus.FAIL, testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 
 				return false;
 			} else {
 				if (noDisplayPassVerified.length == 0) {
 					log.debug("Verified is NOT visible: " + message);
+					testQA.log(LogStatus.PASS, "Verified is NOT visible: " + message);
+					testLocal.log(LogStatus.PASS, "Verified is NOT visible: " + message);
 
 				}
 				return true;
@@ -232,6 +276,8 @@ public class TestBase {
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			if (noDisplayPassVerified.length == 0) {
 				log.debug("Verified is NOT visible: " + message);
+				testQA.log(LogStatus.PASS, "Verified is NOT visible: " + message);
+				testLocal.log(LogStatus.PASS, "Verified is NOT visible: " + message);
 			}
 			return true;
 		}
@@ -248,25 +294,36 @@ public class TestBase {
 		try {
 			if (driver.findElement(by).isDisplayed()) {
 				if (getWebElementText(by).equalsIgnoreCase(text)) {
-					TestUtil.captureScreenshot();
+					TestUtil.captureScreenshot(rptName);
 					log.debug("FAIL=> is visible : " + text);
 					// Extent Reports
+					testQA.log(LogStatus.FAIL, "FAIL=> is visible : " + text);
+					testQA.log(LogStatus.FAIL, testQA.addScreenCapture(TestUtil.screenshotPathQA+TestUtil.screenshotName));
+					
+					testLocal.log(LogStatus.FAIL, "FAIL=> is visible : " + text);
+					testLocal.log(LogStatus.FAIL, testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 					return false;
 				} else {
 					if (noDisplayPassVerified.length == 0) {
 						log.debug("Verified is NOT visible: " + text);
+						testQA.log(LogStatus.PASS, "Verified is NOT visible: " + text);
+						testLocal.log(LogStatus.PASS, "Verified is NOT visible: " + text);
 					}
 					return true;
 				}
 			} else {
 				if (noDisplayPassVerified.length == 0) {
 					log.debug("Verified is NOT visible: " + text);
+					testQA.log(LogStatus.PASS, "Verified is NOT visible: " + text);
+					testLocal.log(LogStatus.PASS, "Verified is NOT visible: " + text);
 				}
 				return true;
 			}
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			if (noDisplayPassVerified.length == 0) {
 				log.debug("Verified is NOT visible: " + text);
+				testQA.log(LogStatus.PASS, "Verified is NOT visible: " + text);
+				testLocal.log(LogStatus.PASS, "Verified is NOT visible: " + text);
 			}
 			return true;
 		}
@@ -282,22 +339,28 @@ public class TestBase {
 		log.info("Is now clickable => " + buttonName);
 		webElement(by).click();
 		log.info("Clicked Button => " + buttonName);
-		/*
-		 * testQA.log(LogStatus.INFO, "Clicked Button => " + buttonName);
-		 * testLocal.log(LogStatus.INFO, "Clicked Button => " + buttonName);
-		 */
+		 testQA.log(LogStatus.INFO, "Clicked Button => " + buttonName);
+		 testLocal.log(LogStatus.INFO, "Clicked Button => " + buttonName);
 	}
 
 	public static Boolean verifyEquals(String expected, String actual) {
 		if (!actual.equals(expected)) {
-			TestUtil.captureScreenshot();
+			TestUtil.captureScreenshot(rptName);
 
 			log.debug("Verification failure : Expected= '" + expected + "' Actual= '" + actual);
+			testQA.log(LogStatus.WARNING, "Verification failure :<br>Expected=" + expected
+					+ "<br>Actual=&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + actual);
+			testQA.log(LogStatus.WARNING, testQA.addScreenCapture(TestUtil.screenshotPathQA+TestUtil.screenshotName));
+			testLocal.log(LogStatus.WARNING, "Verification failure :<br>Expected=" + expected
+					+ "<br>Actual=&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + actual);
+			testLocal.log(LogStatus.WARNING, testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 			// Assert.fail(" Assertion failure => Expected=" + expected + " but found=" +
 			// actual);
 			return false;
 		} else {
 			log.debug("Verified Expected and Actual are the same => " + actual);
+			testQA.log(LogStatus.PASS, "Verified Expected and Actual are the same => " + actual);
+			testLocal.log(LogStatus.PASS, "Verified Expected and Actual are the same => " + actual);
 			// test.log(LogStatus.PASS, test.addScreenCapture(TestUtil.screenshotName));
 			return true;
 		}

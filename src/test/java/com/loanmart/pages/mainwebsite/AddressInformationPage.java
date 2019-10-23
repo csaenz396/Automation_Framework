@@ -161,6 +161,14 @@ public class AddressInformationPage extends TestBase{
 		 * testLocal.log(LogStatus.INFO, "Entered => Terms = " + value);
 		 */
 	}
+	
+	public boolean isOtherIncomeVisible() {
+		return isElementVisible(byOtherIncome, "Other Income");
+	}
+	
+	public boolean isTermsAnConditionsVisible() {
+		return isElementVisible(byTerms, "Application Terms and Conditions");
+	}
 		
 	///////////// AEL Elements ///////////////////
 	
@@ -245,6 +253,10 @@ public class AddressInformationPage extends TestBase{
 	By byCcbSubmitButton = By.xpath("//*[@id='ael-step-2-confirm']/span[2]");
 	public void clickCcbSubmitButton() {
 		clickButton(byCcbSubmitButton, "SUBMIT");
+	}
+	
+	public boolean isClickCcbSubmitButtonVisible() {
+		return isElementVisible(byCcbSubmitButton, "CCB Submit Button");
 	}
 		
 	By byCcbTermsLink = By.xpath("//*[@id=\"ael-step-2\"]/div[13]/div/p/span[2]/a[1]");

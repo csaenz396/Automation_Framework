@@ -1,0 +1,1221 @@
+# Created at 2019-10-23T14:22:54.089
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2019-10-23T14:22:54.720
+Unexpected IOException with stream: *********milestone: 190.01.025**************
+
+
+# Created at 2019-10-23T14:22:55.314
+Unexpected IOException with stream: *********milestone: 190.01.025**************
+
+
+# Created at 2019-10-23T14:22:58.437
+Unexpected IOException with stream: [
+
+# Created at 2019-10-23T14:22:58.438
+Unexpected IOException with stream: 1
+
+# Created at 2019-10-23T14:22:58.439
+Unexpected IOException with stream: 5
+
+# Created at 2019-10-23T14:22:58.439
+Unexpected IOException with stream: 7
+
+# Created at 2019-10-23T14:22:58.440
+Unexpected IOException with stream: 1
+
+# Created at 2019-10-23T14:22:58.441
+Unexpected IOException with stream: 8
+
+# Created at 2019-10-23T14:22:58.442
+Unexpected IOException with stream: 6
+
+# Created at 2019-10-23T14:22:58.442
+Unexpected IOException with stream: 5
+
+# Created at 2019-10-23T14:22:58.443
+Unexpected IOException with stream: 7
+
+# Created at 2019-10-23T14:22:58.443
+Unexpected IOException with stream: 7
+
+# Created at 2019-10-23T14:22:58.444
+Unexpected IOException with stream: 8
+
+# Created at 2019-10-23T14:22:58.444
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:22:58.445
+Unexpected IOException with stream: 4
+
+# Created at 2019-10-23T14:22:58.446
+Unexpected IOException with stream: 3
+
+# Created at 2019-10-23T14:22:58.446
+Unexpected IOException with stream: 7
+
+# Created at 2019-10-23T14:22:58.447
+Unexpected IOException with stream: ]
+
+# Created at 2019-10-23T14:22:58.447
+Unexpected IOException with stream: [
+
+# Created at 2019-10-23T14:22:58.448
+Unexpected IOException with stream: W
+
+# Created at 2019-10-23T14:22:58.448
+Unexpected IOException with stream: A
+
+# Created at 2019-10-23T14:22:58.449
+Unexpected IOException with stream: R
+
+# Created at 2019-10-23T14:22:58.449
+Unexpected IOException with stream: N
+
+# Created at 2019-10-23T14:22:58.450
+Unexpected IOException with stream: I
+
+# Created at 2019-10-23T14:22:58.450
+Unexpected IOException with stream: N
+
+# Created at 2019-10-23T14:22:58.451
+Unexpected IOException with stream: G
+
+# Created at 2019-10-23T14:22:58.452
+Unexpected IOException with stream: ]
+
+# Created at 2019-10-23T14:22:58.452
+Unexpected IOException with stream: :
+
+# Created at 2019-10-23T14:22:58.453
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:22:58.453
+Unexpected IOException with stream: T
+
+# Created at 2019-10-23T14:22:58.454
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:22:58.455
+Unexpected IOException with stream: m
+
+# Created at 2019-10-23T14:22:58.456
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:22:58.457
+Unexpected IOException with stream: d
+
+# Created at 2019-10-23T14:22:58.457
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:22:58.458
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:22:58.459
+Unexpected IOException with stream: u
+
+# Created at 2019-10-23T14:22:58.459
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:22:58.460
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:22:58.461
+Unexpected IOException with stream: c
+
+# Created at 2019-10-23T14:22:58.461
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:22:58.462
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:22:58.462
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:22:58.463
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:22:58.463
+Unexpected IOException with stream: c
+
+# Created at 2019-10-23T14:22:58.464
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:22:58.465
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:22:58.466
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:22:58.467
+Unexpected IOException with stream: g
+
+# Created at 2019-10-23T14:22:58.467
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:22:58.468
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:22:58.468
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:22:58.469
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:22:58.469
+Unexpected IOException with stream: C
+
+# Created at 2019-10-23T14:22:58.470
+Unexpected IOException with stream: h
+
+# Created at 2019-10-23T14:22:58.470
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:22:58.471
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:22:58.471
+Unexpected IOException with stream: m
+
+# Created at 2019-10-23T14:22:58.472
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:22:58.473
+Unexpected IOException with stream: ,
+
+# Created at 2019-10-23T14:22:58.473
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:22:58.474
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:22:58.475
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:22:58.475
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:22:58.476
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:22:58.476
+Unexpected IOException with stream: y
+
+# Created at 2019-10-23T14:22:58.477
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:22:58.478
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:22:58.478
+Unexpected IOException with stream: g
+
+# Created at 2019-10-23T14:22:58.478
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:22:58.479
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:22:58.479
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:22:58.480
+Unexpected IOException with stream: 
+
+# Created at 2019-10-23T14:22:58.480
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:02.458
+Unexpected IOException with stream: Oct 23, 2019 2:23:02 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: car_year)
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=77.0.3865.120)
+  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.02 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'WSM-700332', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58521}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\csaenz\AppData\Local\Temp\scoped_dir14900_1180859138}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: df7a7a1c6bccbc1f7631e850591aeadc
+*** Element info: {Using=id, value=car_year}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.loanmart.base.TestBase.waitForPageLoad(TestBase.java:248)
+	at com.loanmart.pages.mainwebsite.VehicleInformationPage.waitForVehiclePageLoad(VehicleInformationPage.java:18)
+	at com.loanmart.mainwebsite.ApplyForLoan.vehicleInformation(ApplyForLoan.java:91)
+	at com.loanmart.mainwebsite.ApplyForLoan.ApplyForLoanTest(ApplyForLoan.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+
+
+# Created at 2019-10-23T14:23:02.460
+Unexpected IOException with stream: *********milestone: 190.01.025**************
+
+
+# Created at 2019-10-23T14:23:04.463
+Unexpected IOException with stream: [
+
+# Created at 2019-10-23T14:23:04.464
+Unexpected IOException with stream: 1
+
+# Created at 2019-10-23T14:23:04.465
+Unexpected IOException with stream: 5
+
+# Created at 2019-10-23T14:23:04.465
+Unexpected IOException with stream: 7
+
+# Created at 2019-10-23T14:23:04.465
+Unexpected IOException with stream: 1
+
+# Created at 2019-10-23T14:23:04.466
+Unexpected IOException with stream: 8
+
+# Created at 2019-10-23T14:23:04.466
+Unexpected IOException with stream: 6
+
+# Created at 2019-10-23T14:23:04.467
+Unexpected IOException with stream: 5
+
+# Created at 2019-10-23T14:23:04.467
+Unexpected IOException with stream: 7
+
+# Created at 2019-10-23T14:23:04.468
+Unexpected IOException with stream: 8
+
+# Created at 2019-10-23T14:23:04.468
+Unexpected IOException with stream: 4
+
+# Created at 2019-10-23T14:23:04.469
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:23:04.469
+Unexpected IOException with stream: 4
+
+# Created at 2019-10-23T14:23:04.470
+Unexpected IOException with stream: 6
+
+# Created at 2019-10-23T14:23:04.470
+Unexpected IOException with stream: 4
+
+# Created at 2019-10-23T14:23:04.471
+Unexpected IOException with stream: ]
+
+# Created at 2019-10-23T14:23:04.471
+Unexpected IOException with stream: [
+
+# Created at 2019-10-23T14:23:04.471
+Unexpected IOException with stream: W
+
+# Created at 2019-10-23T14:23:04.472
+Unexpected IOException with stream: A
+
+# Created at 2019-10-23T14:23:04.472
+Unexpected IOException with stream: R
+
+# Created at 2019-10-23T14:23:04.473
+Unexpected IOException with stream: N
+
+# Created at 2019-10-23T14:23:04.473
+Unexpected IOException with stream: I
+
+# Created at 2019-10-23T14:23:04.474
+Unexpected IOException with stream: N
+
+# Created at 2019-10-23T14:23:04.474
+Unexpected IOException with stream: G
+
+# Created at 2019-10-23T14:23:04.475
+Unexpected IOException with stream: ]
+
+# Created at 2019-10-23T14:23:04.475
+Unexpected IOException with stream: :
+
+# Created at 2019-10-23T14:23:04.476
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:04.476
+Unexpected IOException with stream: T
+
+# Created at 2019-10-23T14:23:04.476
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:23:04.477
+Unexpected IOException with stream: m
+
+# Created at 2019-10-23T14:23:04.477
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:23:04.478
+Unexpected IOException with stream: d
+
+# Created at 2019-10-23T14:23:04.478
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:04.479
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:23:04.479
+Unexpected IOException with stream: u
+
+# Created at 2019-10-23T14:23:04.480
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:23:04.480
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:04.481
+Unexpected IOException with stream: c
+
+# Created at 2019-10-23T14:23:04.481
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:23:04.481
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:23:04.482
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:23:04.482
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:23:04.483
+Unexpected IOException with stream: c
+
+# Created at 2019-10-23T14:23:04.484
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:23:04.484
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:23:04.485
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:23:04.485
+Unexpected IOException with stream: g
+
+# Created at 2019-10-23T14:23:04.486
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:04.486
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:23:04.487
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:23:04.487
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:04.488
+Unexpected IOException with stream: C
+
+# Created at 2019-10-23T14:23:04.488
+Unexpected IOException with stream: h
+
+# Created at 2019-10-23T14:23:04.489
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:23:04.489
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:23:04.490
+Unexpected IOException with stream: m
+
+# Created at 2019-10-23T14:23:04.490
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:23:04.491
+Unexpected IOException with stream: ,
+
+# Created at 2019-10-23T14:23:04.492
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:04.492
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:23:04.492
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:23:04.493
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:23:04.493
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:23:04.494
+Unexpected IOException with stream: y
+
+# Created at 2019-10-23T14:23:04.494
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:23:04.495
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:23:04.495
+Unexpected IOException with stream: g
+
+# Created at 2019-10-23T14:23:04.495
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:23:04.496
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:23:04.496
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:23:04.497
+Unexpected IOException with stream: 
+
+# Created at 2019-10-23T14:23:04.497
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.474
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=77.0.3865.120)
+  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6.01 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'WSM-700332', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58521}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\csaenz\AppData\Local\Temp\scoped_dir14900_1180859138}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: df7a7a1c6bccbc1f7631e850591aeadc
+
+# Created at 2019-10-23T14:23:08.475
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.475
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created at 2019-10-23T14:23:08.476
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.476
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+
+# Created at 2019-10-23T14:23:08.477
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.477
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-10-23T14:23:08.478
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.478
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-10-23T14:23:08.478
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.479
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+
+# Created at 2019-10-23T14:23:08.479
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.480
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+
+# Created at 2019-10-23T14:23:08.480
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.480
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+
+# Created at 2019-10-23T14:23:08.481
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.481
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+
+# Created at 2019-10-23T14:23:08.482
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.482
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+
+# Created at 2019-10-23T14:23:08.482
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.483
+Unexpected IOException with stream: 	at com.loanmart.utilities.TestUtil.captureScreenshot(TestUtil.java:38)
+
+# Created at 2019-10-23T14:23:08.483
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.484
+Unexpected IOException with stream: 	at com.loanmart.listeners.CustomListeners.onTestFailure(CustomListeners.java:48)
+
+# Created at 2019-10-23T14:23:08.484
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.484
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1731)
+
+# Created at 2019-10-23T14:23:08.485
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.485
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+
+# Created at 2019-10-23T14:23:08.485
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.486
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+
+# Created at 2019-10-23T14:23:08.486
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.486
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+
+# Created at 2019-10-23T14:23:08.487
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.487
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+
+# Created at 2019-10-23T14:23:08.487
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.488
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+
+# Created at 2019-10-23T14:23:08.488
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.488
+Unexpected IOException with stream: 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+
+# Created at 2019-10-23T14:23:08.489
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.489
+Unexpected IOException with stream: 	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+
+# Created at 2019-10-23T14:23:08.490
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.490
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:602)
+
+# Created at 2019-10-23T14:23:08.490
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.491
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+
+# Created at 2019-10-23T14:23:08.491
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.491
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+
+# Created at 2019-10-23T14:23:08.492
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.492
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+
+# Created at 2019-10-23T14:23:08.493
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.493
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+
+# Created at 2019-10-23T14:23:08.493
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.494
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+
+# Created at 2019-10-23T14:23:08.494
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.494
+Unexpected IOException with stream: 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+
+# Created at 2019-10-23T14:23:08.495
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.495
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+
+# Created at 2019-10-23T14:23:08.495
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.496
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+
+# Created at 2019-10-23T14:23:08.496
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.496
+Unexpected IOException with stream: 	at org.testng.TestNG.runSuites(TestNG.java:1144)
+
+# Created at 2019-10-23T14:23:08.497
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.497
+Unexpected IOException with stream: 	at org.testng.TestNG.run(TestNG.java:1115)
+
+# Created at 2019-10-23T14:23:08.497
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.498
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+
+# Created at 2019-10-23T14:23:08.498
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.498
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+
+# Created at 2019-10-23T14:23:08.499
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.499
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+
+# Created at 2019-10-23T14:23:08.499
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.500
+Unexpected IOException with stream: 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+
+# Created at 2019-10-23T14:23:08.500
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.501
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+
+# Created at 2019-10-23T14:23:08.501
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.501
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+
+# Created at 2019-10-23T14:23:08.502
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.502
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+
+# Created at 2019-10-23T14:23:08.502
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.503
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+# Created at 2019-10-23T14:23:08.503
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:08.511
+Unexpected IOException: 8,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc\000A*** Element info: {Using=id\002C value=car_year},null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc\000A*** Element info: {Using=id\002C value=car_year},ApplyForLoan.ApplyForLoanTest:59->vehicleInformation:91->TestBase.waitForPageLoad:248 \00BB WebDriver,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc\000A*** Element info: {Using=id\002C value=car_year}\000A\0009at com.loanmart.mainwebsite.ApplyForLoan.vehicleInformation(ApplyForLoan.java:91)\000A\0009at com.loanmart.mainwebsite.ApplyForLoan.ApplyForLoanTest(ApplyForLoan.java:59)\000A
+
+
+# Created at 2019-10-23T14:23:08.512
+Unexpected IOException with stream: *****************INSIDE LAUNCHBROWSER******************************************
+
+
+# Created at 2019-10-23T14:23:10.518
+Unexpected IOException with stream: [
+
+# Created at 2019-10-23T14:23:10.519
+Unexpected IOException with stream: 1
+
+# Created at 2019-10-23T14:23:10.519
+Unexpected IOException with stream: 5
+
+# Created at 2019-10-23T14:23:10.519
+Unexpected IOException with stream: 7
+
+# Created at 2019-10-23T14:23:10.520
+Unexpected IOException with stream: 1
+
+# Created at 2019-10-23T14:23:10.520
+Unexpected IOException with stream: 8
+
+# Created at 2019-10-23T14:23:10.520
+Unexpected IOException with stream: 6
+
+# Created at 2019-10-23T14:23:10.521
+Unexpected IOException with stream: 5
+
+# Created at 2019-10-23T14:23:10.521
+Unexpected IOException with stream: 7
+
+# Created at 2019-10-23T14:23:10.521
+Unexpected IOException with stream: 9
+
+# Created at 2019-10-23T14:23:10.522
+Unexpected IOException with stream: 0
+
+# Created at 2019-10-23T14:23:10.522
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:23:10.522
+Unexpected IOException with stream: 5
+
+# Created at 2019-10-23T14:23:10.523
+Unexpected IOException with stream: 1
+
+# Created at 2019-10-23T14:23:10.523
+Unexpected IOException with stream: 8
+
+# Created at 2019-10-23T14:23:10.523
+Unexpected IOException with stream: ]
+
+# Created at 2019-10-23T14:23:10.524
+Unexpected IOException with stream: [
+
+# Created at 2019-10-23T14:23:10.524
+Unexpected IOException with stream: W
+
+# Created at 2019-10-23T14:23:10.524
+Unexpected IOException with stream: A
+
+# Created at 2019-10-23T14:23:10.525
+Unexpected IOException with stream: R
+
+# Created at 2019-10-23T14:23:10.525
+Unexpected IOException with stream: N
+
+# Created at 2019-10-23T14:23:10.525
+Unexpected IOException with stream: I
+
+# Created at 2019-10-23T14:23:10.526
+Unexpected IOException with stream: N
+
+# Created at 2019-10-23T14:23:10.526
+Unexpected IOException with stream: G
+
+# Created at 2019-10-23T14:23:10.527
+Unexpected IOException with stream: ]
+
+# Created at 2019-10-23T14:23:10.527
+Unexpected IOException with stream: :
+
+# Created at 2019-10-23T14:23:10.527
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:10.528
+Unexpected IOException with stream: T
+
+# Created at 2019-10-23T14:23:10.528
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:23:10.528
+Unexpected IOException with stream: m
+
+# Created at 2019-10-23T14:23:10.528
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:23:10.529
+Unexpected IOException with stream: d
+
+# Created at 2019-10-23T14:23:10.529
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:10.529
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:23:10.530
+Unexpected IOException with stream: u
+
+# Created at 2019-10-23T14:23:10.530
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:23:10.530
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:10.531
+Unexpected IOException with stream: c
+
+# Created at 2019-10-23T14:23:10.531
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:23:10.531
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:23:10.531
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:23:10.532
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:23:10.532
+Unexpected IOException with stream: c
+
+# Created at 2019-10-23T14:23:10.532
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:23:10.533
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:23:10.533
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:23:10.533
+Unexpected IOException with stream: g
+
+# Created at 2019-10-23T14:23:10.534
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:10.534
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:23:10.534
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:23:10.535
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:10.535
+Unexpected IOException with stream: C
+
+# Created at 2019-10-23T14:23:10.535
+Unexpected IOException with stream: h
+
+# Created at 2019-10-23T14:23:10.536
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:23:10.536
+Unexpected IOException with stream: o
+
+# Created at 2019-10-23T14:23:10.536
+Unexpected IOException with stream: m
+
+# Created at 2019-10-23T14:23:10.536
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:23:10.537
+Unexpected IOException with stream: ,
+
+# Created at 2019-10-23T14:23:10.537
+Unexpected IOException with stream:  
+
+# Created at 2019-10-23T14:23:10.537
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:23:10.538
+Unexpected IOException with stream: e
+
+# Created at 2019-10-23T14:23:10.538
+Unexpected IOException with stream: t
+
+# Created at 2019-10-23T14:23:10.538
+Unexpected IOException with stream: r
+
+# Created at 2019-10-23T14:23:10.539
+Unexpected IOException with stream: y
+
+# Created at 2019-10-23T14:23:10.539
+Unexpected IOException with stream: i
+
+# Created at 2019-10-23T14:23:10.539
+Unexpected IOException with stream: n
+
+# Created at 2019-10-23T14:23:10.540
+Unexpected IOException with stream: g
+
+# Created at 2019-10-23T14:23:10.540
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:23:10.540
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:23:10.541
+Unexpected IOException with stream: .
+
+# Created at 2019-10-23T14:23:10.541
+Unexpected IOException with stream: 
+
+# Created at 2019-10-23T14:23:10.541
+Unexpected IOException with stream: 
+
+
+# Created at 2019-10-23T14:23:14.530
+Unexpected IOException: 8,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,ApplyForLoan.launchBrowser:51 \00BB WebDriver chrome not reachable\000A  (Session info...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc\000A\0009at com.loanmart.mainwebsite.ApplyForLoan.launchBrowser(ApplyForLoan.java:51)\000A
+
+
+# Created at 2019-10-23T14:23:14.854
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:14.856
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:14.951
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:14.953
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.030
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.031
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.100
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.101
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.159
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.160
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.218
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.219
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.278
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.279
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.356
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.357
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.427
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.428
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.496
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.497
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.581
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.584
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.660
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.661
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.727
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.728
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.799
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.800
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.873
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.874
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.931
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.932
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:15.985
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:15.986
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:16.053
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:16.055
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:16.114
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:16.115
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:16.176
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:16.177
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:16.247
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:16.248
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:16.320
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,ApplyForLoanTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:16.323
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,launchBrowser(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:16.386
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,testTest(com.loanmart.mainwebsite.ApplyForLoan),null,chrome not reachable\000A  (Session info: chrome=77.0.3865.120)\000A  (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 6.02 seconds\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'WSM-700332'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_221'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C timeouts={implicit=0\002C pageLoad=300000\002C script=30000}\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=false\002C goog:chromeOptions={debuggerAddress=localhost:58521}\002C acceptInsecureCerts=false\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C setWindowRect=true\002C unexpectedAlertBehaviour=ignore\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442})\002C userDataDir=C:\005CUsers\005Ccsaenz\005CAppData\005CLocal\005CTemp\005Cscoped_dir14900_1180859138}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C strictFileInteractability=false\002C databaseEnabled=false\002C handlesAlerts=true\002C version=77.0.3865.120\002C browserConnectionEnabled=false\002C proxy={}\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: df7a7a1c6bccbc1f7631e850591aeadc,null
+
+
+# Created at 2019-10-23T14:23:16.440
+Unexpected IOException: 9,1,com.loanmart.mainwebsite.ApplyForLoan,tearDownSuite(com.loanmart.mainwebsite.ApplyForLoan),null,null,null
+
+
+# Created at 2019-10-23T14:23:16.610
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGDirectoryTestSuite,com.loanmart.mainwebsite.ApplyForLoan,null,null,null
+
+
