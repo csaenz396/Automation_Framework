@@ -152,9 +152,9 @@ public class ApplyForLoan extends TestBase {
 		return loanNumber;
 	}
 	
-	@Test(groups = "nothing")
-	public void testTest() {
-		System.out.println("In test test with no group");
-	}
+	/*
+	 * @Test(groups = "nothing") public void testTest() {
+	 * System.out.println("In test test with no group"); }
+	 */
 
 }

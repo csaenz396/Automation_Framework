@@ -31,8 +31,10 @@ public class CustomListeners extends TestBase implements ITestListener {
 		repQA = reps.get("extentQA");
 		repLocal = reps.get("extentLocal");
 		
-		testQA = repQA.startTest(arg0.getName());
-		testLocal = repLocal.startTest(arg0.getName());
+		/*
+		 * testQA = repQA.startTest(arg0.getName()); testLocal =
+		 * repLocal.startTest(arg0.getName());
+		 */
 		
 	}
 

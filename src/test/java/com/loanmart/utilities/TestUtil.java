@@ -41,13 +41,15 @@ public class TestUtil extends TestBase{
 		Calendar c = Calendar.getInstance();
 
 		//screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".png";// changed it from jpg to png
-		screenshotPathLocal = System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\"+rptName+"\\screenshots\\";
-		screenshotPathQA = "\\\\loanmart\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\Reports\\"+mileStone+"\\"+rptName+"\\Screenshots\\";
+		screenshotPathLocal = System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\"+"report"+"\\screenshots\\";
+		screenshotPathQA = "\\\\loanmart\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\Reports\\"+mileStone+"\\"+"report"+"\\Screenshots\\";
 		screenshotName = testName+c.get(Calendar.MILLISECOND)+ ".png";
 
 		try {
-			FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\"+rptName+"\\screenshots\\"+ screenshotName));
-			FileUtils.copyFile(scrFile, new File( "\\\\loanmart\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\Reports\\"+mileStone+"\\"+rptName+"\\Screenshots\\"+screenshotName));
+			//FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\"+rptName+"\\screenshots\\"+ screenshotName));
+			FileUtils.copyFile(scrFile, new File(screenshotPathLocal+screenshotName));
+			//FileUtils.copyFile(scrFile, new File( "\\\\loanmart\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\Reports\\"+mileStone+"\\"+rptName+"\\Screenshots\\"+screenshotName));
+			FileUtils.copyFile(scrFile,  new File(screenshotPathQA+screenshotName));
 		} catch (IOException e) {
 			//testQA.log(LogStatus.FAIL, "FAIL=> Can not take AScreenshot");
 			testLocal.log(LogStatus.FAIL, "FAIL=> Can not take AScreenshot");
