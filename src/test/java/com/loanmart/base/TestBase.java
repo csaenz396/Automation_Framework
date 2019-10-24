@@ -33,11 +33,11 @@ import com.relevantcodes.extentreports.LogStatus;
 @Listeners(com.loanmart.listeners.CustomListeners.class)
 public class TestBase {
 
-	public static WebDriver driver;
+	public static WebDriver driver;//
 	private ChromeOptions chromeOptions = new ChromeOptions();
 	public static FileInputStream fis;
-	public static WebDriverWait wait;
-	public static Properties config = new Properties();
+	public static WebDriverWait wait;//
+	public static Properties config = new Properties();//
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static ExcelReader excel = new ExcelReader();
 	public static String rptName;
@@ -80,7 +80,7 @@ public class TestBase {
 				//chromeOptions.addArguments("--disable-gpu");
 				//chromeOptions.addArguments("--no-sandbox");
 				//chromeOptions.addArguments("--allow-insecure-localhost");
-				//chromeOptions.addArguments("--headless");
+				chromeOptions.addArguments("--headless");
 				chromeOptions.addArguments("--window-size=1980,1080");
 				driver = new ChromeDriver(chromeOptions);
 				log.debug("Chrome Lunched.");

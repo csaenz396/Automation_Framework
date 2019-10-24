@@ -26,7 +26,7 @@ public class CustomListeners extends TestBase implements ITestListener {
 	public void onStart(ITestContext arg0) {
 		
 		/* rptName = arg0.getName(); */
-		reps = ExtentManager.getInstance(arg0.getName());
+		reps = ExtentManager.getInstance("Report");
 		
 		repQA = reps.get("extentQA");
 		repLocal = reps.get("extentLocal");
