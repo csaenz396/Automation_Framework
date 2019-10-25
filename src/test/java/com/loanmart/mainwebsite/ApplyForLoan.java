@@ -32,10 +32,10 @@ public class ApplyForLoan extends TestBase {
 	
 	@BeforeTest(groups = "submit_application")
 	public void setUpClass() {
-		System.out.println("*********************INSIDE setUpClass***************************************");
+		//System.out.println("*********************INSIDE setUpClass***************************************");
 
 		testURL = https+devEnvironment+config.getProperty("baseurl_mainwebsite")+ "application/application";
-		System.out.println(testURL);
+		//System.out.println(testURL);
 
 		log.debug("Navigated to => " + testURL);
 		contactInfopage = new ContactInformationPage(driver);
@@ -47,13 +47,13 @@ public class ApplyForLoan extends TestBase {
 	
 	@BeforeMethod(groups = "submit_application")
 	public void launchBrowser() {
-		System.out.println("*****************INSIDE LAUNCHBROWSER******************************************");
+		//System.out.println("*****************INSIDE LAUNCHBROWSER******************************************");
 		driver.get(testURL);
 	}
 	
 	@Test(groups = "submit_application", enabled = true, dataProviderClass = TestUtil.class, dataProvider = "dp")
 	public void ApplyForLoanTest( HashMap<String, String> data ) throws InterruptedException {
-		System.out.println("*************************"+System.getProperty("DEV_ENV")+"**********************************");
+		//System.out.println("*************************"+System.getProperty("DEV_ENV")+"**********************************");
 
 		contactInformation(data);
 		vehicleInformation(data);

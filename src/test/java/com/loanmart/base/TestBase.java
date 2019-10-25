@@ -51,7 +51,7 @@ public class TestBase {
 
 	@BeforeSuite(alwaysRun = true)
 	public void setUpSuite(ITestContext testName) {
-		System.out.println("************************INSIDE BEFORE CLASS******************************");
+		//System.out.println("************************INSIDE BEFORE CLASS******************************");
 		rptName = testName.getName();
 		if (driver == null) {
 			try {

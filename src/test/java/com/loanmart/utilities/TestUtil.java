@@ -34,7 +34,7 @@ public class TestUtil extends TestBase{
 	
 	public static void captureScreenshot(String testName) {
 
-		System.out.println("*********milestone: "+mileStone+"**************");
+		//System.out.println("*********milestone: "+mileStone+"**************");
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 		//Date d = new Date();
@@ -60,10 +60,10 @@ public class TestUtil extends TestBase{
 	
 	@DataProvider(name = "dp")
 	public Object[][] getData(Method m){
-		System.out.println(m.getName()+"***************");
+		//System.out.println(m.getName()+"***************");
 		List<HashMap<String,String>> information = new ArrayList<HashMap<String,String>>();
 		information = excel.getDataFromExcelFile(m.getName());
-		System.out.println(information);
+		//System.out.println(information);
 		
 		Object[][] data  =  new Object[information.size()][1];
 		int[] counter = {0};
