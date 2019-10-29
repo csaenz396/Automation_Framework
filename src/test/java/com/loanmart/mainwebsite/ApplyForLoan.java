@@ -28,6 +28,7 @@ public class ApplyForLoan extends TestBase {
 	private SuccessPage successPage;
 	private String testURL;
 	private String https = "https://";
+	public static String suiteName = "ApplyForLoanTest";
 	
 	
 	@BeforeTest(groups = "submit_application")
@@ -38,11 +39,11 @@ public class ApplyForLoan extends TestBase {
 		//System.out.println(testURL);
 
 		log.debug("Navigated to => " + testURL);
-		contactInfopage = new ContactInformationPage(driver);
-		vehicleInformationPage = new VehicleInformationPage(driver);
-		addressInformationPage = new AddressInformationPage(driver);
-		customizeYourOfferPage = new CustomizeYourOfferPage(driver);
-		successPage = new SuccessPage(driver);
+		contactInfopage = new ContactInformationPage(driver, suiteName);
+		vehicleInformationPage = new VehicleInformationPage(driver,suiteName);
+		addressInformationPage = new AddressInformationPage(driver,suiteName);
+		customizeYourOfferPage = new CustomizeYourOfferPage(driver,suiteName);
+		successPage = new SuccessPage(driver, suiteName);
 	}
 	
 	@BeforeMethod(groups = "submit_application")
@@ -151,10 +152,5 @@ public class ApplyForLoan extends TestBase {
 		System.out.println("**********LOAN NUMBER "+loanNumber+" ********************************");
 		return loanNumber;
 	}
-	
-	/*
-	 * @Test(groups = "nothing") public void testTest() {
-	 * System.out.println("In test test with no group"); }
-	 */
 
 }

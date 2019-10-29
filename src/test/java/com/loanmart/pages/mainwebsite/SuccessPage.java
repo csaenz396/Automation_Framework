@@ -5,24 +5,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.loanmart.actions.Actions;
 import com.loanmart.base.TestBase;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class SuccessPage extends TestBase{
 
 	WebDriver driver;
+	Actions action;
 
-	public SuccessPage(WebDriver driver) {
+	public SuccessPage(WebDriver driver, String testName) {
 		this.driver = driver;
+		action = new Actions(testName);
 	}
 	
 	public void waitForSuccessPageLoad() {
-		waitForPageLoad(byLoanNumber);
+		action.waitForPageLoad(byLoanNumber);
 	}
 	
 	By byLoanNumber = By.id("lm-app-number");
 	public WebElement loanNumber() {
-		return webElement(byLoanNumber);
+		return action.webElement(byLoanNumber);
 	}
 	
 	public String getLoanNumber() {

@@ -3,6 +3,7 @@ com\loanmart\listeners\CustomListeners.class
 com\loanmart\utilities\TestUtil.class
 com\loanmart\base\TestBase.class
 com\loanmart\utilities\ExtentManager.class
+com\loanmart\actions\Actions.class
 com\loanmart\pages\mainwebsite\SuccessPage.class
 com\loanmart\pages\mainwebsite\CustomizeYourOfferPage.class
 com\loanmart\mainwebsite\ApplyForLoan.class

@@ -35,9 +35,9 @@ public class ExcelReader {
 	private XSSFSheet sheet;
 
 	public ExcelReader() {
-		filePath = "\\\\loanmart.com\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\TestData\\";
+		//filePath = "\\\\loanmart.com\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\TestData\\";
 		//sheetName = null;
-		//filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\";
+		filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\";
 		try {
 			file = new FileInputStream(new File(filePath + "testdata.xlsx"));
 			workbook = new XSSFWorkbook(file);

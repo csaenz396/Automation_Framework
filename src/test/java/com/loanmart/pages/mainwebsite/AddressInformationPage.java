@@ -3,144 +3,148 @@ package com.loanmart.pages.mainwebsite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import com.loanmart.actions.Actions;
 import com.loanmart.base.TestBase;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class AddressInformationPage extends TestBase{
 
 	WebDriver webDriver;
+	Actions action;
 	
-	public AddressInformationPage(WebDriver driver) {
+	public AddressInformationPage(WebDriver driver, String testName) {
 		this.webDriver = driver;
+		action = new Actions(testName);
 	}
 	
 	public void waitForAddressPageLoad() {
-		waitForPageLoad(byStreetAddress);
+		action.waitForPageLoad(byStreetAddress);
 	}
 	
 	By byStreetAddress =By.id("street_address");
 	public WebElement streetAddress() {
-		return webElement(byStreetAddress);
+		return action.webElement(byStreetAddress);
 	}
 
 	public void setStreetAddress(String value) {
-		setTextBox(byStreetAddress, value, "StreetAddress");
+		action.setTextBox(byStreetAddress, value, "StreetAddress");
 	}
 
 	By byCity =By.id("city");
 	public WebElement city() {
-		return webElement(byCity);
+		return action.webElement(byCity);
 	}
 
 	public void setCity(String value ) {
-		setTextBox(byCity, value, "City");
+		action.setTextBox(byCity, value, "City");
 	}
 	
 	By byState = By.id("state");
 	public WebElement state() {
-		return webElement(byState);
+		return action.webElement(byState);
 	}
 
 	public void setState(String value) {
-		setDropDown(byState, value, "State");
+		action.setDropDown(byState, value, "State");
 	}
 	
 	By byZipCode = By.id("zip_code");
 	public WebElement zipCode() {
-		return webElement(byZipCode);
+		return action.webElement(byZipCode);
 	}
 
 	public void setZipCode(String value) {
-		setTextBox(byZipCode, value, "ZipCode");
+		action.setTextBox(byZipCode, value, "ZipCode");
 	}
 	
 	By byOwnership = By.id("ownership");
 	public WebElement ownership() {
-		return webElement(byOwnership);
+		return action.webElement(byOwnership);
 	}
 
 	public void setOwnership(String value) {
-		setDropDown(byOwnership, value, "RentOrOwn");
+		action.setDropDown(byOwnership, value, "RentOrOwn");
 	}
 	
 	By byMortgageRent = By.id("mortgage_rent");
 	public WebElement mortgageRent() {
-		return webElement(byMortgageRent);
+		return action.webElement(byMortgageRent);
 	}
 
 	public void setMortgageRent(String value) {
-		setTextBox(byMortgageRent, value, "Mortgage/Rent");
+		action.setTextBox(byMortgageRent, value, "Mortgage/Rent");
 	}
 	
 	By byLivedYears = By.id("lived_years");
 	public WebElement livedYears() {
-		return webElement(byLivedYears);
+		return action.webElement(byLivedYears);
 	}
 
 	public void setLivedYears(String value) {
-		setDropDown(byLivedYears, value, "LivedYears");
+		action.setDropDown(byLivedYears, value, "LivedYears");
 	}
 	
 	By byLivedMonths = By.id("lived_months");
 	public WebElement livedMonths() {
-		return webElement(byLivedMonths);
+		return action.webElement(byLivedMonths);
 	}
 
 	public void setLivedMonths(String value) {
-		setDropDown(byLivedMonths, value, "LivedMonths");
+		action.setDropDown(byLivedMonths, value, "LivedMonths");
 	}
 	
 	By byGrossIncome = By.id("gross_income");
 	public WebElement grossIncome() {
-		return webElement(byGrossIncome);
+		return action.webElement(byGrossIncome);
 	}
 
 	public void setGrossIncome(String value) {
-		setTextBox(byGrossIncome, value, "GrossIncome");
+		action.setTextBox(byGrossIncome, value, "GrossIncome");
 		
 	}
 	
 	By byOtherIncome = By.id("other_income");
 	public WebElement otherIncome() {
-		return webElement(byOtherIncome);
+		return action.webElement(byOtherIncome);
 	}
 
 	public void setOtherIncome(String value) {
-		setTextBox(byOtherIncome, value, "OtherIncome");
+		action.setTextBox(byOtherIncome, value, "OtherIncome");
 	}
 	
 	By byHomeNumber = By.id("home_number");
 	public WebElement homeNumber() {
-		return webElement(byHomeNumber);
+		return action.webElement(byHomeNumber);
 	}
 
 	public void setHomeNumber(String value) {
-		setTextBox(byHomeNumber, value, "HomeNumber");
+		action.setTextBox(byHomeNumber, value, "HomeNumber");
 	}
 	
 	By byDob = By.id("dob");
 	public WebElement dob() {
-		return webElement(byDob);
+		return action.webElement(byDob);
 	}
 
 	public void setDob(String value) throws InterruptedException {
 		Thread.sleep(1000);
-		setTextBox(byDob, value, "DateOfBirth");
+		action.setTextBox(byDob, value, "DateOfBirth");
 		Thread.sleep(1000);
 	}
 	
 	By bySsn = By.id("ssn_itin");
 	public WebElement ssn() {
-		return webElement(bySsn);
+		return action.webElement(bySsn);
 	}
 
 	public void setSsn(String value) {
-		setTextBox(bySsn, value, "SSN");
+		action.setTextBox(bySsn, value, "SSN");
 	}
 	
 	By byTerms =By.id("terms2");
 	public WebElement terms() {
-		return webElement(byTerms);
+		return action.webElement(byTerms);
 	}
 	
 	public String getTerms() {
@@ -163,11 +167,11 @@ public class AddressInformationPage extends TestBase{
 	}
 	
 	public boolean isOtherIncomeVisible() {
-		return isElementVisible(byOtherIncome, "Other Income");
+		return action.isElementVisible(byOtherIncome, "Other Income");
 	}
 	
 	public boolean isTermsAnConditionsVisible() {
-		return isElementVisible(byTerms, "Application Terms and Conditions");
+		return action.isElementVisible(byTerms, "Application Terms and Conditions");
 	}
 		
 	///////////// AEL Elements ///////////////////
@@ -175,37 +179,37 @@ public class AddressInformationPage extends TestBase{
 	By byAelAppPhoneNumber1 = By.xpath("//*[@id=\"prefer-to-call-box\"]/div/div/p/a/span[1]");
 	String aelAppPhoneNumber1 = "1-855-422-7412";
 	public void isAelAppPhoneNumber1Visible() {
-		isTextVisible(byAelAppPhoneNumber1, aelAppPhoneNumber1);
+		action.isTextVisible(byAelAppPhoneNumber1, aelAppPhoneNumber1);
 	}
 	
 	public void isNotAelAppPhoneNumber1Visible() {
-		isNotTextVisible(byAelAppPhoneNumber1, aelAppPhoneNumber1);
+		action.isNotTextVisible(byAelAppPhoneNumber1, aelAppPhoneNumber1);
 	}
 		
 	By byAelAppPhoneNumber2 = By.xpath("//*[@id=\"prefer-to-call-box\"]/div/div/div/button/span[1]");
 	String aelAppPhoneNumber2 = "1-855-422-7412";
 	public void isAelAppPhoneNumber2Visible() {
-		isTextVisible(byAelAppPhoneNumber2, aelAppPhoneNumber2);
+		action.isTextVisible(byAelAppPhoneNumber2, aelAppPhoneNumber2);
 	}
 	
 	public void isNotAelAppPhoneNumber2Visible() {
-		isNotTextVisible(byAelAppPhoneNumber2, aelAppPhoneNumber2);
+		action.isNotTextVisible(byAelAppPhoneNumber2, aelAppPhoneNumber2);
 	}
 								    
 	By byAelTerms = By.xpath("//*[@id=\"ael-step-2\"]/div[13]/div/p/span[1]");
 	String aelTerms="By checking this box, you agree to the general terms and conditions, wireless policy and online policies and agreements.";
 	public void isAelTermsVisible() {
-		isTextVisible(byAelTerms,aelTerms);
+		action.isTextVisible(byAelTerms,aelTerms);
 	}
 	
 	public void isNotAelTermsVisible() {
-		isNotTextVisible(byAelTerms,aelTerms);
+		action.isNotTextVisible(byAelTerms,aelTerms);
 	}
 	
 	
 	By byCustomizeMyOfferButton = By.xpath("//*[contains(text(),'Customize my offer')]");
 	public void clickCustomizeMyOfferButton() {
-		clickButton(byCustomizeMyOfferButton, "Customize my offer");
+		action.clickButton(byCustomizeMyOfferButton, "Customize my offer");
 	}
 	
 	///////////// CCB Elements ///////////////////
@@ -213,57 +217,57 @@ public class AddressInformationPage extends TestBase{
 	By byCcbAppPhoneNumber1 = By.xpath("//*[@id=\"prefer-to-call-box\"]/div/div/p/a/span[2]");
 	String ccbAppPhoneNumber1="1-855-422-7410";
 	public void isCcbAppPhoneNumber1Visible() {
-		isTextVisible(byCcbAppPhoneNumber1, ccbAppPhoneNumber1);
+		action.isTextVisible(byCcbAppPhoneNumber1, ccbAppPhoneNumber1);
 	}
 	
 	public void isNotCcbAppPhoneNumber1Visible() {
-		isNotTextVisible(byCcbAppPhoneNumber1, ccbAppPhoneNumber1);
+		action.isNotTextVisible(byCcbAppPhoneNumber1, ccbAppPhoneNumber1);
 	}
 	
 	By byCcbAppPhoneNumber2 = By.xpath("//*[@id=\"prefer-to-call-box\"]/div/div/div/button/span[2]");
 	String ccbAppPhoneNumber2="1-855-422-7410";
 	public void isCcbAppPhoneNumber2Visible() {
-		isTextVisible(byCcbAppPhoneNumber2, ccbAppPhoneNumber2);
+		action.isTextVisible(byCcbAppPhoneNumber2, ccbAppPhoneNumber2);
 	}
 	
 	public void isNotCcbAppPhoneNumber2Visible() {
-		isNotTextVisible(byCcbAppPhoneNumber2, ccbAppPhoneNumber2);
+		action.isNotTextVisible(byCcbAppPhoneNumber2, ccbAppPhoneNumber2);
 	}
 	
 	By byCcbTerms = By.xpath("//*[@id=\"ael-step-2\"]/div[13]/div/p/span[2]");
 	String ccbTerms = "By checking this box, you agree to the Application Terms and Conditions, Capital Community Bank’s Privacy Policy and LoanMart’s Privacy Policy";
 	public void isCcbTermsVisible() {
-		isTextVisible(byCcbTerms,ccbTerms);
+		action.isTextVisible(byCcbTerms,ccbTerms);
 	}
 	
 	public void isNotCcbTermsVisible() {
-		isNotTextVisible(byCcbTerms,ccbTerms);
+		action.isNotTextVisible(byCcbTerms,ccbTerms);
 	}
 		
 	By byCcbIncomeText = By.xpath("//*[@id=\"ael-step-2\"]/div[8]/span");
 	String ccbIncomeText="Alimony, child support, or separate maintenance income need not be revealed if you do not wish to have it considered as a basis for repaying this obligation";
 	public void isCcbIncomeTextVisible() {
-		isTextVisible(byCcbIncomeText,ccbIncomeText);
+		action.isTextVisible(byCcbIncomeText,ccbIncomeText);
 	}
 	
 	public void isNotCcbIncomeTextVisible() {
-		isNotTextVisible(byCcbIncomeText,ccbIncomeText);
+		action.isNotTextVisible(byCcbIncomeText,ccbIncomeText);
 	}
 		
 	By byCcbSubmitButton = By.xpath("//*[@id='ael-step-2-confirm']/span[2]");
 	public void clickCcbSubmitButton() {
-		clickButton(byCcbSubmitButton, "SUBMIT");
+		action.clickButton(byCcbSubmitButton, "SUBMIT");
 	}
 	
 	public boolean isClickCcbSubmitButtonVisible() {
-		return isElementVisible(byCcbSubmitButton, "CCB Submit Button");
+		return action.isElementVisible(byCcbSubmitButton, "CCB Submit Button");
 	}
 		
 	By byCcbTermsLink = By.xpath("//*[@id=\"ael-step-2\"]/div[13]/div/p/span[2]/a[1]");
 	String ccbTermsLink = "Application Terms and Conditions";
 	public void verifyStateInTermsAndConditions(String state) {
 		String winHandleBefore = driver.getWindowHandle();
-		clickLink(byCcbTermsLink, ccbTermsLink);
+		action.clickLink(byCcbTermsLink, ccbTermsLink);
 		for(String winHandle : driver.getWindowHandles()){
 		    driver.switchTo().window(winHandle);
 		}

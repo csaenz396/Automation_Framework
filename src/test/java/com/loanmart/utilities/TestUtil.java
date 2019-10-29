@@ -14,6 +14,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.DataProvider;
 
 import com.loanmart.base.TestBase;
+import com.loanmart.listeners.CustomListeners;
 import com.relevantcodes.extentreports.LogStatus;
 
 /*import java.io.File;
@@ -26,33 +27,28 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.relevantcodes.extentreports.LogStatus;
 */
-public class TestUtil extends TestBase{
+public class TestUtil{
 	
 	public static String screenshotPathLocal;
 	public static String screenshotPathQA;
 	public static String screenshotName;
+	private ExcelReader excel = new ExcelReader();
 	
 	public static void captureScreenshot(String testName) {
+		File scrFile = ((TakesScreenshot) TestBase.driver).getScreenshotAs(OutputType.FILE);
 
-		//System.out.println("*********milestone: "+mileStone+"**************");
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-		//Date d = new Date();
 		Calendar c = Calendar.getInstance();
 
-		//screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".png";// changed it from jpg to png
 		screenshotPathLocal = "screenshots\\";
-		screenshotPathQA = "\\\\loanmart\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\Reports\\"+mileStone+"\\"+"report"+"\\Screenshots\\";
 		screenshotName = testName+c.get(Calendar.MILLISECOND)+ ".png";
 
 		try {
-			FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\"+"report"+"\\screenshots\\"+ screenshotName));
+			FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\"+System.getProperty("TEST_NAME")+"\\screenshots\\"+ screenshotName));
 			//FileUtils.copyFile(scrFile, new File( "\\\\loanmart\\fs\\Dept\\Tech\\QA\\Automation\\LM Test Automation\\Reports\\"+mileStone+"\\"+rptName+"\\Screenshots\\"+screenshotName));
-			FileUtils.copyFile(scrFile,  new File(screenshotPathQA+screenshotName));
+			//FileUtils.copyFile(scrFile,  new File(screenshotPathQA+screenshotName));
 		} catch (IOException e) {
 			//testQA.log(LogStatus.FAIL, "FAIL=> Can not take AScreenshot");
-			testLocal.log(LogStatus.FAIL, "FAIL=> Can not take AScreenshot");
-			testQA.log(LogStatus.FAIL, "FAIL=> Can not take AScreenshot");
+			CustomListeners.testLocal.log(LogStatus.FAIL, "FAIL=> Can not take AScreenshot");
 		}
 
 	}

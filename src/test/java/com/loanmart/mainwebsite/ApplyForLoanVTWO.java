@@ -21,7 +21,7 @@ import com.loanmart.utilities.TestUtil;
 public class ApplyForLoanVTWO extends TestBase {
 	
 	@Test(groups="the_only_one")
-	public void ApplyForLoanTest() {
+	public void EditALoan() {
 		System.out.println("test on a different script");
 	}
 

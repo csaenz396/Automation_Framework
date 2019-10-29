@@ -4,18 +4,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.loanmart.actions.Actions;
 import com.loanmart.base.TestBase;
 
 public class CustomizeYourOfferPage extends TestBase {
 
 	WebDriver driver;
+	Actions action;
 
-	public CustomizeYourOfferPage(WebDriver driver) {
+	public CustomizeYourOfferPage(WebDriver driver, String testName) {
 		this.driver = driver;
+		action = new Actions(testName);
 	}
 	
 	public void waitForCustomizeYourOfferPageLoad() {
-		waitForPageLoad(bySubmitButton);
+		action.waitForPageLoad(bySubmitButton);
 	}
 	
 	By bySubmitButton = By.id("lm-submit-app");
@@ -29,7 +32,7 @@ public class CustomizeYourOfferPage extends TestBase {
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(byLoaading));
 		log.debug("Is now invisibile => Loading...");
 
-		clickButtonWhenClickable(bySubmitButton, "Submit And Get Money");
+		action.clickButtonWhenClickable(bySubmitButton, "Submit And Get Money");
 	}
 			
 	public By byAelText1 = By.xpath("//*[@id=\"loan_header\"]/h2");
@@ -82,6 +85,6 @@ public class CustomizeYourOfferPage extends TestBase {
 	public String ccbText4="Estimated monthly payment**";
 		
 	public void clickSubmitButton() {
-		clickButton(bySubmitButton, "Submit");
+		action.clickButton(bySubmitButton, "Submit");
 	}
 }
