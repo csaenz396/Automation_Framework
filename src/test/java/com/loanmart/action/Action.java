@@ -1,8 +1,12 @@
-package com.loanmart.actions;
+package com.loanmart.action;
 
+import java.util.ArrayList;
+import java.util.Set;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,14 +18,14 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.loanmart.base.TestBase;
 import com.loanmart.listeners.CustomListeners;
 
-public class Actions {
+public class Action {
 
 	
 	//since these are static I might be able to just access them via the TestBase.static variable
 	private String rptName;
 
 	
-	public Actions(String rptName) {
+	public Action(String rptName) {
 		this.rptName = rptName;
 	}
 	
@@ -42,11 +46,14 @@ public class Actions {
 			if (TestBase.driver.findElement(by).isDisplayed()) {
 				if (noDisplayPassVerified.length == 0) {
 					TestBase.log.debug("Verified is visible: " + message);
+					CustomListeners.testLocal.log(LogStatus.PASS, message);
 				}
 				return true;
 			} else {
 				TestUtil.captureScreenshot(rptName);
 				TestBase.log.debug("FAIL=> is not visible : " + message);
+				CustomListeners.testLocal.log(LogStatus.FAIL, message);
+				CustomListeners.testLocal.log(LogStatus.FAIL, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 				// Extent Reports
 				return false;
 			}
@@ -245,9 +252,9 @@ public class Actions {
 			TestUtil.captureScreenshot(rptName);
 
 			TestBase.log.debug("Verification failure : Expected= '" + expected + "' Actual= '" + actual);
-			CustomListeners.testLocal.log(LogStatus.WARNING, "Verification failure :<br>Expected=" + expected
+			CustomListeners.testLocal.log(LogStatus.FAIL, "Verification failure :<br>Expected=" + expected
 					+ "<br>Actual=&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + actual);
-			CustomListeners.testLocal.log(LogStatus.WARNING, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+			CustomListeners.testLocal.log(LogStatus.FAIL, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 			// Assert.fail(" Assertion failure => Expected=" + expected + " but found=" +
 			// actual);
 			return false;
@@ -259,4 +266,169 @@ public class Actions {
 		}
 
 	}
+	
+	public boolean verifyNotEquals(String expected, String actual) {
+		if(actual.equals(expected)) {
+			TestUtil.captureScreenshot(rptName);
+
+			TestBase.log.debug("Verification failure : Expected= '" + expected + " is the same as ' Actual= '" + actual);
+			CustomListeners.testLocal.log(LogStatus.WARNING, "Verification failure :<br>Expected=" + expected
+					+ "<br> is the same as Actual=&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + actual);
+			CustomListeners.testLocal.log(LogStatus.WARNING, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+			return false;
+		}else {
+			TestBase.log.debug("Verified Expected and Actual are NOT the same => " + actual);
+			CustomListeners.testLocal.log(LogStatus.PASS, "Verified Expected and Actual are NOT the same => " + actual);
+			return true;
+		}
+	}
+	
+	public boolean verifyContains(String subString, String completeString) {
+		if(completeString.contains(subString)) {
+			TestBase.log.debug("Verified "+completeString+" --contains => "+subString);
+			CustomListeners.testLocal.log(LogStatus.PASS, "Verified "+completeString+" --contains => "+subString);
+			return true;
+		}else {
+			TestBase.log.debug("Verificaiton failure : "+completeString+" --DOES NOT contain => "+subString);
+			TestUtil.captureScreenshot(rptName);
+			CustomListeners.testLocal.log(LogStatus.FAIL, "Verificaiton failure : "+completeString+" --DOES NOT contain => "+subString);
+			CustomListeners.testLocal.log(LogStatus.FAIL, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+			return false;
+		}
+	}
+	
+	public void setDropDown_ng(By by, String value, String dropDownName) {
+		try {
+			webElement(by).click();
+			Thread.sleep(100);
+			TestBase.driver.findElement(By.xpath("//div[@class='cdk-overlay-pane']//span[contains(text(),'" + value + "')]"))
+					.click();
+			TestBase.log.info("Selected from Dropdown => " + dropDownName + " = " + value);
+			CustomListeners.testLocal.log(LogStatus.INFO, "Selected from Dropdown => " + dropDownName + " = " + value);
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			TestUtil.captureScreenshot(rptName);
+			TestBase.log.debug("FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
+			// Extent Reports
+			
+			CustomListeners.testLocal.log(LogStatus.FAIL, "FAIL=> Cannot locate : " + value + " in Dropdown : " + dropDownName);
+			CustomListeners.testLocal.log(LogStatus.FAIL, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	public String getTextBox(By by) {
+		String value = webElement(by).getAttribute("value");
+		TestBase.log.info("Got Textbox value => " + by.toString() + " = " + value);
+		return value;
+	}
+	
+	//scrolls page all the way down
+	public void scrollPageDown() {
+		
+		TestBase.js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		
+	}
+	
+	//scrolls page all the way up
+	public void scrollPageUp() {
+		TestBase.js.executeScript("window.scrollTo(0, 0)");
+	}
+	
+	//this will open a link in a new tab as if user was pressing Ctrl+ left_click on mouse
+	public boolean openLinkInNewTab(By by, String message, String...strings ) {
+		if (isElementVisible(by, message, "noDisplayPassVerified")) {
+			TestBase.act.keyDown(Keys.CONTROL).click(TestBase.driver.findElement(by)).keyUp(Keys.CONTROL).perform();
+			if(strings.length == 0) {	
+				CustomListeners.testLocal.log(LogStatus.PASS, "Opened in new tab ==> "+message);
+			}
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	//this will make the driver switch to a new window handle
+	public void switchWindowHandles(String windHandle) {
+		TestBase.driver.switchTo().window(windHandle);
+	}
+	
+	//this will get all the current open winHandles
+	public ArrayList<String> getWindowHandles() {
+		ArrayList<String> handles = new ArrayList<String> (TestBase.driver.getWindowHandles());
+		return handles;
+	}
+	
+	public String getCurrentWindowHandle() {
+		return TestBase.driver.getWindowHandle();
+	}
+	public void navigateToAnotherPage(String url) {
+		TestBase.driver.navigate().to(url);
+	}
+	
+	public String getCurrentURL() {
+		return TestBase.driver.getCurrentUrl();
+	}
+	
+	public void closeCurrentWindowHandle() {
+		TestBase.driver.close();
+	}
+	
+	public void takeScreentShot(String status, String message, String screenShotName) {
+		
+		switch(status.toLowerCase()) {
+		
+		case "pass":
+			TestUtil.captureScreenshot(screenShotName);
+			CustomListeners.testLocal.log(LogStatus.PASS, message);
+			CustomListeners.testLocal.log(LogStatus.PASS, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+			break;
+			
+		case "fail":
+			TestUtil.captureScreenshot(screenShotName);
+			CustomListeners.testLocal.log(LogStatus.FAIL, message);
+			CustomListeners.testLocal.log(LogStatus.FAIL, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+			break;
+			
+		case "info":
+			TestUtil.captureScreenshot(screenShotName);
+			CustomListeners.testLocal.log(LogStatus.INFO, message);
+			CustomListeners.testLocal.log(LogStatus.INFO, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+			break;
+		
+		default:
+			CustomListeners.testLocal.log(LogStatus.ERROR, "INVALID STATUS ARGUMENT");
+		}
+	}
+	public void resizeWin(WebDriver driver) {
+		((JavascriptExecutor) driver).executeScript("window.resizeTo(1980,1080)");
+		//TestBase.js.executeScript("window.resizeTo(1980,1080)");
+	}
+	
+	public void checkCheckBox(By by, String checkboxName) {
+		try {
+			webElement(by).click();
+			TestBase.log.debug("Checked option => " + checkboxName);
+		}catch(org.openqa.selenium.NoSuchElementException e) {
+			TestUtil.captureScreenshot(rptName);
+
+			TestBase.log.debug("FAIL=> is not present: " + checkboxName);
+			// Extent Reports
+			
+			CustomListeners.testLocal.log(LogStatus.FAIL, "FAIL=> is not present: " + checkboxName);
+			CustomListeners.testLocal.log(LogStatus.FAIL, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+			
+		}
+	}
+	
+	public boolean isCheckBoxChecked(By by, String checkBoxName) {
+		if(webElement(by).isSelected()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
+

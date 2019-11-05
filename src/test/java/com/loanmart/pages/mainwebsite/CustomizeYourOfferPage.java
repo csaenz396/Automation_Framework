@@ -4,17 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.loanmart.actions.Actions;
+import com.loanmart.action.Action;
 import com.loanmart.base.TestBase;
 
 public class CustomizeYourOfferPage extends TestBase {
 
 	WebDriver driver;
-	Actions action;
+	Action action;
 
 	public CustomizeYourOfferPage(WebDriver driver, String testName) {
 		this.driver = driver;
-		action = new Actions(testName);
+		action = new Action(testName);
 	}
 	
 	public void waitForCustomizeYourOfferPageLoad() {

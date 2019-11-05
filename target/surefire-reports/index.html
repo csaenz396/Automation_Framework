@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
-                    <span>2 groups</span>
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.test.LOSEditApplication" hash-for-method="EditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)">EditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.mainwebsite.ApplyForLoan" hash-for-method="ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...)">ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.mainwebsite.ApplyForLoanVTWO" hash-for-method="EditALoan">EditALoan</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.test.CCBApplicationSubmission" hash-for-method="ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)">ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -122,33 +131,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.loanmart.mainwebsite.ApplyForLoan</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.loanmart.test.LOSEditApplication</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...)">
-                  </a> <!-- ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...) -->
-                  <span class="method-name">ApplyForLoanTest</span>
-                  <span class="parameters">({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, CarMileage=40000, DoYouHaveAnAutomobile=Yes, ESignedConsent=Yes, FICO=787, DOB=11/12/1978, GrossIncome=5000, LivedMonths=4, FirstName=Marc, CarStyle=4D SUV AWD - Base, ZipCode=91302, LivedYears=10, Terms=Yes, CarYear=2016, OtherIncome=1000, City=Calabasas, HomeNumber=8189794827, SSN=666367098, CarMake=Acura, CarModel=RDX, MobileNumber=8188766573, StreetAddress=4050 Old Topanga Canyon Rd, ThirdPartiesConsent=Yes, State=Florida, LastName=Alderson})</span>
+                  <a name="EditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)">
+                  </a> <!-- EditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...) -->
+                  <span class="method-name">EditLOSApplication</span>
+                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4568939, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Orlando, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Thomas, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=871, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Jerry, ZipCode=32835, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666106794, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=59 Center Dr, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC})</span>
+                  <div class="stack-trace">java.lang.AssertionError: One or more test have failed --- Please reference test report for more details
+	at com.loanmart.test.LOSEditApplication.EditLOSApplication(LOSEditApplication.java:84)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.loanmart.mainwebsite.ApplyForLoanVTWO</span>
+              <span class="class-name">com.loanmart.test.CCBApplicationSubmission</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EditALoan">
-                  </a> <!-- EditALoan -->
-                  <span class="method-name">EditALoan</span>
+                  <a name="ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)">
+                  </a> <!-- ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...) -->
+                  <span class="method-name">ApplicationSubmissionCCB</span>
+                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4568938, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Orlando, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Thomas, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=871, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Jerry, ZipCode=32835, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666106794, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=59 Center Dr, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,10 +176,21 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;ApplyAndEdit&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
   &lt;test name=&quot;Surefire test&quot;&gt;
+    &lt;method-selectors&gt;
+      &lt;method-selector&gt;
+        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.GroupMatcherMethodSelector&quot; priority=&quot;9999&quot;/&gt;
+      &lt;/method-selector&gt;
+    &lt;/method-selectors&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.loanmart.mainwebsite.ApplyForLoan&quot;/&gt;
-      &lt;class name=&quot;com.loanmart.mainwebsite.ApplyForLoanVTWO&quot;/&gt;
+      &lt;class name=&quot;com.loanmart.test.AELApplicationSubmission&quot;/&gt;
+      &lt;class name=&quot;com.loanmart.test.CCBApplicationSubmission&quot;/&gt;
+      &lt;class name=&quot;com.loanmart.test.LOSEditApplication&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -179,7 +204,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (2 classes)</span>
+                <span class="test-name">Surefire test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,18 +215,38 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">submit_application</span>
+              <span class="test-group-name">ApplyAndEdit</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">ApplyForLoanTest</span>
+                <span class="method-in-group-name">ApplicationSubmissionCCB</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">EditLOSApplication</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">the_only_one</span>
+              <span class="test-group-name">CCB</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">EditALoan</span>
+                <span class="method-in-group-name">ApplicationSubmissionCCB</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">EditLOS</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">EditLOSApplication</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">EditLOSApplication</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -223,13 +268,13 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ApplyForLoanTest')
-data.setCell(0, 2, 'com.loanmart.mainwebsite.ApplyForLoan')
-data.setCell(0, 3, 66763);
+data.setCell(0, 1, 'EditLOSApplication')
+data.setCell(0, 2, 'com.loanmart.test.LOSEditApplication')
+data.setCell(0, 3, 69404);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'EditALoan')
-data.setCell(1, 2, 'com.loanmart.mainwebsite.ApplyForLoanVTWO')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'ApplicationSubmissionCCB')
+data.setCell(1, 2, 'com.loanmart.test.CCBApplicationSubmission')
+data.setCell(1, 3, 23947);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -249,14 +294,26 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.loanmart.mainwebsite.ApplyForLoanVTWO</span>
+              <span class="ignored-class-name">com.loanmart.test.AELApplicationSubmission</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDownSuite</span>
+                <span class="ignored-method-name">ApplicationSubmissionAEL</span>
                 <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.loanmart.test.CCBApplicationSubmission</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.loanmart.test.LOSEditApplication</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUpSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -269,37 +326,53 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.loanmart.mainwebsite.ApplyForLoan</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.loanmart.test.AELApplicationSubmission</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUpSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loanmart.test.CCBApplicationSubmission</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">4091 ms</span>
+                <span class="method-start">4124 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loanmart.test.LOSEditApplication</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">4139 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loanmart.test.CCBApplicationSubmission</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">4818 ms</span>
+                <span class="method-start">4769 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">ApplyForLoanTest({ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, Email=qa@800loanmart.com, MortgageRent=1200, Car...)</span>
-                <span class="method-start">8858 ms</span>
+                <span class="method-name">ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)</span>
+                <span class="method-start">7013 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.loanmart.mainwebsite.ApplyForLoanVTWO</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.loanmart.test.LOSEditApplication</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">31958 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">EditALoan</span>
-                <span class="method-start">76146 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">EditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)</span>
+                <span class="method-start">36748 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.loanmart.mainwebsite.ApplyForLoan</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDownSuite</span>
-                <span class="method-start">76513 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="configuration-method after">
+                <span class="method-name">failureCheckup</span>
+                <span class="method-start">106591 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

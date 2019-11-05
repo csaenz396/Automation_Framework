@@ -2,19 +2,23 @@ package com.loanmart.pages.mainwebsite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.loanmart.actions.Actions;
+import com.loanmart.action.Action;
 import com.loanmart.base.TestBase;
+import com.loanmart.listeners.CustomListeners;
+import com.loanmart.utilities.TestUtil;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ContactInformationPage extends TestBase {
 	
 	WebDriver driver;
-	Actions action;
+	Action action;
 	
 	public ContactInformationPage(WebDriver driver, String suiteName) {
 		this.driver = driver;
-		action = new Actions(suiteName);
+		action = new Action(suiteName);
 	}
 	
 	By byFirstName = By.id("firstName");
@@ -199,9 +203,14 @@ public class ContactInformationPage extends TestBase {
 	}
 
 	By byCcbBox = By.id("ccb-box");
-	public void isCcbBoxVisible(String state ) {
+	
+	public WebElement ccbBox() {
+		return action.webElement(byCcbBox);
+	}
+	public boolean isCcbBoxVisible(String state, WebDriverWait wait ) {
 		String ccbBoxText="Loans for "+state+" residents are made by Capital Community Bank, a Utah chartered bank, member FDIC. Loans made by Capital Community Bank will be serviced by LoanMart.";
-		action.isTextVisible(byCcbBox, ccbBoxText);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(byCcbBox));
+		return action.isTextVisible(byCcbBox, ccbBoxText);
 	}
 	
 	public boolean isNotCcbBoxVisible() {
@@ -215,6 +224,19 @@ public class ContactInformationPage extends TestBase {
 	
 	public String getCcbStates() {
 		return ccbStates().getText();
+	}
+	
+	public boolean isStateFoundinDisclosureCCB(String state) {
+		action.scrollPageDown();
+		if(action.verifyContains(state, getCcbStates())) {
+			TestUtil.captureScreenshot("CCBDISCLOSURE");
+			CustomListeners.testLocal.log(LogStatus.PASS, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
+			action.scrollPageUp();
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	
 	

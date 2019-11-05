@@ -5,18 +5,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.loanmart.actions.Actions;
+import com.loanmart.action.Action;
 import com.loanmart.base.TestBase;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class SuccessPage extends TestBase{
 
 	WebDriver driver;
-	Actions action;
+	Action action;
 
 	public SuccessPage(WebDriver driver, String testName) {
 		this.driver = driver;
-		action = new Actions(testName);
+		action = new Action(testName);
 	}
 	
 	public void waitForSuccessPageLoad() {
@@ -41,7 +41,14 @@ public class SuccessPage extends TestBase{
 	
 	///////////// AEL Elements ///////////////////
 	public By byAelText1 = By.xpath("//*[@id=\"lm-loan-container\"]/div/div[1]/div/h2/span");
-	public String aelText1="Success! ";
+	public String aelText1="Success!";
+	
+	public boolean isSuccessMessageVisible() {
+		if(action.isTextVisible(byAelText1, aelText1))
+			return true;
+		else
+			return false;
+	}
 	
 	public By byAelText2 = By.xpath("//*[@id=\"lm-loan-container\"]/div/div[2]/div[1]/div/div[1]/div[1]/span/em/strong");
 	public String aelText2="or";
@@ -74,6 +81,17 @@ public class SuccessPage extends TestBase{
 	public String aelHaveUsCallYouButtonText="Have us call you";
 	
 	///////////// CCB Elements ///////////////////
+	
+	public By byCcbSuccessText = By.xpath("/html//section[@id='lm-loan-container']//h2");
+	public String ccbTextSuccess="You are one phone call away from getting your cash.";
+	
+
+	public boolean isSuccessMessageVisibleCCB() {
+		if(action.verifyContains(ccbTextSuccess, action.getWebElementText(byCcbSuccessText)))
+			return true;
+		else
+			return false;
+	}
 	public By byCcbText1 = By.xpath("//*[@id=\"lm-loan-container\"]/div/div[2]/div[1]/div/h3[2]/span[2]");
 	public String ccbText1="Application";
 	

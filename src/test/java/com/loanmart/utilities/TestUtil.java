@@ -55,10 +55,16 @@ public class TestUtil{
 	
 	
 	@DataProvider(name = "dp")
-	public Object[][] getData(Method m){
+	public Object[][] getData(Method m) throws IOException{
 		//System.out.println(m.getName()+"***************");
+		String testName;
+		if(m.getName() == "EditLOSApplication")
+			testName = "ApplicationSubmissionCCB";
+		else
+			testName = m.getName();
+		
 		List<HashMap<String,String>> information = new ArrayList<HashMap<String,String>>();
-		information = excel.getDataFromExcelFile(m.getName());
+		information = excel.getDataFromExcelFile(testName);
 		//System.out.println(information);
 		
 		Object[][] data  =  new Object[information.size()][1];
@@ -70,6 +76,14 @@ public class TestUtil{
 		
 		return data;
 		
+	}
+	
+	public static String convertToPhoneFormat(String phoneNumber) {
+		return "("+phoneNumber.substring(0,3)+") "+phoneNumber.substring(3,6)+" - "+phoneNumber.substring(6,10);
+	}
+	
+	public static String convertToSSNFormat(String SSNNumber) {
+		return SSNNumber.substring(0,3)+"-"+SSNNumber.substring(3,5)+"-"+SSNNumber.substring(5,9);
 	}
 
 

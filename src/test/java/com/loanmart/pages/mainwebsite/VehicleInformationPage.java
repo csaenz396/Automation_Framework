@@ -1,21 +1,30 @@
 package com.loanmart.pages.mainwebsite;
 
+import java.util.ArrayList;
+import java.util.Set;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 
-import com.loanmart.actions.Actions;
+import com.loanmart.action.Action;
 import com.loanmart.base.TestBase;
+import com.loanmart.listeners.CustomListeners;
+import com.loanmart.utilities.TestUtil;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class VehicleInformationPage extends TestBase{
 	
 	WebDriver driver;
-	Actions action;
+	Action action;
 	
 	public VehicleInformationPage(WebDriver driver, String testName) {
 		this.driver = driver;
-		action = new Actions(testName);
+		action = new Action(testName);
 	}
 
 	public void waitForVehiclePageLoad() {
@@ -103,6 +112,10 @@ public class VehicleInformationPage extends TestBase{
 		 * testLocal.log(LogStatus.INFO, "Entered => Terms = " + value);
 		 */
 	}
+	
+	public boolean isTermsCheckBoxvisible() {
+		return action.isElementVisible(byTerms, "Terms");
+	}
 
 	By byActiveMilitary = By.id("text_active_military");
 	public WebElement activeMilitary() {
@@ -126,6 +139,10 @@ public class VehicleInformationPage extends TestBase{
 		 * testQA.log(LogStatus.INFO, "Entered => Active Military = " + value);
 		 * testLocal.log(LogStatus.INFO, "Entered => Active Military = " + value);
 		 */
+	}
+	
+	public boolean isMilitaryCheckBoxVisible() {
+		return action.isElementVisible(byActiveMilitary, "Military");
 	}
 	
 	By byNextButton = By.id("ael-step-1-confirm");
@@ -231,6 +248,49 @@ public class VehicleInformationPage extends TestBase{
 	}
 	
 	///////////// CCB Elements ///////////////////
+	By byCCBHereConsentLink = By.linkText("here");
+	
+	public WebElement consentLink() {
+		return action.webElement(byCCBHereConsentLink);
+	}
+	
+	public boolean CheckCcbConsent() {
+		if(clickCcbConsentLink())
+			return true;
+		else
+			return false;
+	}
+	public boolean clickCcbConsentLink() {
+
+		String winHandleBefore = action.getCurrentWindowHandle();
+		
+		if(action.openLinkInNewTab(byCCBHereConsentLink, "CCB Concent to Receive Calls Link")) {
+			ArrayList<String> list = action.getWindowHandles();
+			if(list.size()>0) {
+				action.switchWindowHandles(list.get(2));
+				String url = action.getCurrentURL();
+				action.closeCurrentWindowHandle();
+				action.switchWindowHandles(list.get(1));
+				action.navigateToAnotherPage(url);
+				if(action.verifyContains("Capital Community Bank", ccbConsent().getText())) {
+					action.takeScreentShot("pass", "CCB Consent to Receive Calls", "ccbConsent");
+					action.closeCurrentWindowHandle();
+					action.switchWindowHandles(winHandleBefore);
+					return true;
+				}else
+					return false;	
+			}
+			else
+				return false;
+		}else
+			return false;
+	}
+	
+	By ccbConsent = By.xpath("/html/body/p[1]");
+	
+	public WebElement ccbConsent() {
+		return action.webElement(ccbConsent);
+	}
 	String ccbLoanHeaderText = "Call 1-855-422-7410 now to complete your application by speaking with a dedicated loan representative or complete this form to get your decision.";
 	public void isCcbLoanHeaderVisible() {
 		action.isTextVisible(byLoanHeaderText, ccbLoanHeaderText);

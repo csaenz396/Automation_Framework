@@ -125,7 +125,7 @@ public class ApplyForLoan extends TestBase {
 		addressInformationPage.setHomeNumber(info.get("HomeNumber"));
 		addressInformationPage.setDob(info.get("DOB"));
 		addressInformationPage.setSsn(info.get("SSN"));
-		if(addressInformationPage.isTermsAnConditionsVisible())
+		if(addressInformationPage.isTermsAndConditionsVisible())
 			addressInformationPage.setTerms(info.get("Terms"));
 		
 		log.debug("Address Information successfully Submitted");

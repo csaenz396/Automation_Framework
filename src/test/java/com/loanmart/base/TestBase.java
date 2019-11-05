@@ -8,12 +8,14 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -35,12 +37,14 @@ import com.relevantcodes.extentreports.LogStatus;
 public class TestBase {
 
 	public static WebDriver driver;
-	private ChromeOptions chromeOptions = new ChromeOptions();
+	public static ChromeOptions chromeOptions = new ChromeOptions();
 	public static FileInputStream fis;
 	public static WebDriverWait wait;
+	public static JavascriptExecutor js;
 	public static Properties config = new Properties();
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static String devEnvironment = System.getProperty("DEV_ENV");
+	public static Actions act;
 
 
 	@BeforeSuite(alwaysRun = true)
@@ -88,14 +92,16 @@ public class TestBase {
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
 			wait = new WebDriverWait(driver, 240);
+			js = (JavascriptExecutor) driver;
+			act = new Actions(driver);
 		}
 
 	}
 	
 	@AfterSuite
 	public void tearDownSuite() {
-		if (driver != null)
-			driver.quit();
+		//if (driver != null)
+			//driver.quit();
 		log.debug("Class Test Execution completed");
 	}
 
