@@ -100,8 +100,8 @@ public class TestBase {
 	
 	@AfterSuite
 	public void tearDownSuite() {
-		//if (driver != null)
-			//driver.quit();
+		if (driver != null)
+			driver.quit();
 		log.debug("Class Test Execution completed");
 	}
 
