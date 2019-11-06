@@ -47,6 +47,11 @@ public class MainPage {
 		TestBase.wait.until(ExpectedConditions.elementToBeClickable(byPullCreditButton));
 		TestBase.log.debug("Is now visible => PULL CREDIT...");
 	}
+	
+	By bySalesPitchButton = By.xpath("//form[@id='decisionForm']/div/div/p-panel/div/div[@role='region']//button[@label='Sales Pitch Tool']");
+	public void waitForSalePitchButtonVisibility() {
+		TestBase.wait.until(ExpectedConditions.elementToBeClickable(bySalesPitchButton));
+	}
 
 	By bySave = By.xpath("//span[contains(text(),'Save')]");
 	public void clickSaveButton() {

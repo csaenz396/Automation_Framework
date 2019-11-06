@@ -38,6 +38,8 @@ public class CCBApplicationSubmission extends TestBase{
 	private int rowIndex;
 	private String loanNumber;
 	
+
+	
 	@BeforeTest(groups = {"ApplyAndEdit","CCB"})
 	public void setUpClass() {
 		rowIndex = 0;

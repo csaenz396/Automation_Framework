@@ -179,7 +179,7 @@ public class LOSEditApplication extends TestBase {
 		log.debug("Inside Terms Page");
 		CustomListeners.testLocal.log(LogStatus.INFO, "--- TERMS PAGE STARTED ---");
 		termsPage.waitForTermsPageLoad();
-		mainPage.waitForNextButttonVisibility();
+		mainPage.waitForSalePitchButtonVisibility();
 		TestUtil.captureScreenshot("termsPage");
 		CustomListeners.testLocal.log(LogStatus.INFO, CustomListeners.testLocal.addScreenCapture(TestUtil.screenshotPathLocal+TestUtil.screenshotName));
 		failureCounter(termsPage.verifyAssertEquals(info.get("FICO"), termsPage.getFICO()));
