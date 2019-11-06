@@ -2,33 +2,33 @@
 <testng-results skipped="0" failed="1" ignored="3" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="102636" started-at="2019-11-05T21:52:13Z" finished-at="2019-11-05T21:53:56Z">
+  <suite name="Surefire suite" duration-ms="99162" started-at="2019-11-06T00:39:41Z" finished-at="2019-11-06T00:41:20Z">
     <groups>
       <group name="ApplyAndEdit">
-        <method signature="CCBApplicationSubmission.ApplicationSubmissionCCB(java.util.HashMap)[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@5442a311]" name="ApplicationSubmissionCCB" class="com.loanmart.test.CCBApplicationSubmission"/>
-        <method signature="LOSEditApplication.EditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.LOSEditApplication@548e7350]" name="EditLOSApplication" class="com.loanmart.test.LOSEditApplication"/>
+        <method signature="CCBApplicationSubmission.ApplicationSubmissionCCB(java.util.HashMap)[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@53b32d7]" name="ApplicationSubmissionCCB" class="com.loanmart.test.CCBApplicationSubmission"/>
+        <method signature="LOSEditApplication.EditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.LOSEditApplication@5442a311]" name="EditLOSApplication" class="com.loanmart.test.LOSEditApplication"/>
       </group> <!-- ApplyAndEdit -->
       <group name="CCB">
-        <method signature="CCBApplicationSubmission.ApplicationSubmissionCCB(java.util.HashMap)[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@5442a311]" name="ApplicationSubmissionCCB" class="com.loanmart.test.CCBApplicationSubmission"/>
+        <method signature="CCBApplicationSubmission.ApplicationSubmissionCCB(java.util.HashMap)[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@53b32d7]" name="ApplicationSubmissionCCB" class="com.loanmart.test.CCBApplicationSubmission"/>
       </group> <!-- CCB -->
       <group name="EditLOS">
-        <method signature="LOSEditApplication.EditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.LOSEditApplication@548e7350]" name="EditLOSApplication" class="com.loanmart.test.LOSEditApplication"/>
+        <method signature="LOSEditApplication.EditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.LOSEditApplication@5442a311]" name="EditLOSApplication" class="com.loanmart.test.LOSEditApplication"/>
       </group> <!-- EditLOS -->
       <group name="Regression">
-        <method signature="LOSEditApplication.EditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.LOSEditApplication@548e7350]" name="EditLOSApplication" class="com.loanmart.test.LOSEditApplication"/>
+        <method signature="LOSEditApplication.EditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.LOSEditApplication@5442a311]" name="EditLOSApplication" class="com.loanmart.test.LOSEditApplication"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="Surefire test" duration-ms="102636" started-at="2019-11-05T21:52:13Z" finished-at="2019-11-05T21:53:56Z">
+    <test name="Surefire test" duration-ms="99162" started-at="2019-11-06T00:39:41Z" finished-at="2019-11-06T00:41:20Z">
       <class name="com.loanmart.test.LOSEditApplication">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.loanmart.test.LOSEditApplication@548e7350]" name="launchBrowser" is-config="true" duration-ms="4790" started-at="2019-11-05T13:52:41Z" finished-at="2019-11-05T13:52:46Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.loanmart.test.LOSEditApplication@5442a311]" name="launchBrowser" is-config="true" duration-ms="4465" started-at="2019-11-05T16:40:07Z" finished-at="2019-11-05T16:40:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="EditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.LOSEditApplication@548e7350]" name="EditLOSApplication" duration-ms="69404" depends-on-groups="CCB" started-at="2019-11-05T13:52:46Z" data-provider="dp" finished-at="2019-11-05T13:53:56Z">
+        <test-method status="FAIL" signature="EditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.LOSEditApplication@5442a311]" name="EditLOSApplication" duration-ms="67930" depends-on-groups="CCB" started-at="2019-11-05T16:40:12Z" data-provider="dp" finished-at="2019-11-05T16:41:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4568939, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Orlando, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Thomas, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=871, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Jerry, ZipCode=32835, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666106794, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=59 Center Dr, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC}]]>
+                <![CDATA[{HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4568959, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Orlando, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Thomas, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=871, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Jerry, ZipCode=32835, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666106794, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=59 Center Dr, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC}]]>
               </value>
             </param>
           </params>
@@ -76,29 +76,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EditLOSApplication -->
-        <test-method status="PASS" signature="failureCheckup()[pri:0, instance:com.loanmart.test.LOSEditApplication@548e7350]" name="failureCheckup" is-config="true" duration-ms="0" started-at="2019-11-05T13:53:56Z" finished-at="2019-11-05T13:53:56Z">
+        <test-method status="PASS" signature="failureCheckup()[pri:0, instance:com.loanmart.test.LOSEditApplication@5442a311]" name="failureCheckup" is-config="true" duration-ms="0" started-at="2019-11-05T16:41:20Z" finished-at="2019-11-05T16:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failureCheckup -->
       </class> <!-- com.loanmart.test.LOSEditApplication -->
       <class name="com.loanmart.test.CCBApplicationSubmission">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@5442a311]" name="setUpClass" is-config="true" duration-ms="15" started-at="2019-11-05T13:52:14Z" finished-at="2019-11-05T13:52:14Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@53b32d7]" name="setUpClass" is-config="true" duration-ms="13" started-at="2019-11-05T16:39:41Z" finished-at="2019-11-05T16:39:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.loanmart.test.LOSEditApplication@548e7350]" name="setUpClass" is-config="true" duration-ms="27" started-at="2019-11-05T13:52:14Z" finished-at="2019-11-05T13:52:14Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.loanmart.test.LOSEditApplication@5442a311]" name="setUpClass" is-config="true" duration-ms="20" started-at="2019-11-05T16:39:41Z" finished-at="2019-11-05T16:39:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@5442a311]" name="launchBrowser" is-config="true" duration-ms="2244" started-at="2019-11-05T13:52:14Z" finished-at="2019-11-05T13:52:16Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@53b32d7]" name="launchBrowser" is-config="true" duration-ms="2088" started-at="2019-11-05T16:39:42Z" finished-at="2019-11-05T16:39:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="ApplicationSubmissionCCB(java.util.HashMap)[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@5442a311]" name="ApplicationSubmissionCCB" duration-ms="23947" started-at="2019-11-05T13:52:16Z" data-provider="dp" finished-at="2019-11-05T13:52:40Z">
+        <test-method status="PASS" signature="ApplicationSubmissionCCB(java.util.HashMap)[pri:0, instance:com.loanmart.test.CCBApplicationSubmission@53b32d7]" name="ApplicationSubmissionCCB" duration-ms="22994" started-at="2019-11-05T16:39:44Z" data-provider="dp" finished-at="2019-11-05T16:40:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4568938, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Orlando, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Thomas, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=871, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Jerry, ZipCode=32835, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666106794, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=59 Center Dr, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC}]]>
+                <![CDATA[{HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4568958, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Orlando, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Thomas, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=871, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Jerry, ZipCode=32835, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666106794, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=59 Center Dr, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC}]]>
               </value>
             </param>
           </params>
@@ -107,7 +107,7 @@
         </test-method> <!-- ApplicationSubmissionCCB -->
       </class> <!-- com.loanmart.test.CCBApplicationSubmission -->
       <class name="com.loanmart.test.AELApplicationSubmission">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.loanmart.test.AELApplicationSubmission@53b32d7]" name="setUpSuite" is-config="true" duration-ms="3955" started-at="2019-11-05T13:52:09Z" finished-at="2019-11-05T13:52:13Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.loanmart.test.AELApplicationSubmission@343f4d3d]" name="setUpSuite" is-config="true" duration-ms="3737" started-at="2019-11-05T16:39:37Z" finished-at="2019-11-05T16:39:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->

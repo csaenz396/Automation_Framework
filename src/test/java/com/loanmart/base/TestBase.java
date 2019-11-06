@@ -98,7 +98,7 @@ public class TestBase {
 
 	}
 	
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void tearDownSuite() {
 		if (driver != null)
 			driver.quit();
