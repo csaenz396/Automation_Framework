@@ -27,6 +27,13 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.relevantcodes.extentreports.LogStatus;
 */
+
+/*##############################################################################*/
+/*
+ * This class takes care of taking screenshots, providing data to the test cases
+ * and converting strings to different types of formats.
+ */
+/*###############################################################################*/
 public class TestUtil{
 	
 	public static String screenshotPathLocal;
@@ -34,6 +41,11 @@ public class TestUtil{
 	public static String screenshotName;
 	private ExcelReader excel = new ExcelReader();
 	
+	/*##############################################################################*/
+	/*
+	 * Function to take screenshots for test reporting
+	 */
+	/*###############################################################################*/
 	public static void captureScreenshot(String testName) {
 		File scrFile = ((TakesScreenshot) TestBase.driver).getScreenshotAs(OutputType.FILE);
 
@@ -53,6 +65,12 @@ public class TestUtil{
 
 	}
 	
+	/*##############################################################################*/
+	/*
+	 * return an multidimensional array of objects. This gets data from excel reader
+	 * class.  and returns it to the test that called this function.
+	 */
+	/*###############################################################################*/
 	
 	@DataProvider(name = "dp")
 	public Object[][] getData(Method m) throws IOException{
@@ -78,10 +96,20 @@ public class TestUtil{
 		
 	}
 	
+	/*##############################################################################*/
+	/*
+	 * Convert string of number to a phone number format
+	 */
+	/*###############################################################################*/
 	public static String convertToPhoneFormat(String phoneNumber) {
 		return "("+phoneNumber.substring(0,3)+") "+phoneNumber.substring(3,6)+" - "+phoneNumber.substring(6,10);
 	}
 	
+	/*##############################################################################*/
+	/*
+	 * Conver string of numbers to SSN
+	 */
+	/*###############################################################################*/
 	public static String convertToSSNFormat(String SSNNumber) {
 		return SSNNumber.substring(0,3)+"-"+SSNNumber.substring(3,5)+"-"+SSNNumber.substring(5,9);
 	}

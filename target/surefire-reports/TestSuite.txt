@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 103.44 s <<< FAILURE! - in TestSuite
-EditLOSApplication(com.loanmart.test.LOSEditApplication)  Time elapsed: 68.285 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 111.796 s <<< FAILURE! - in TestSuite
+EditLOSApplication(com.loanmart.test.LOSEditApplication)  Time elapsed: 69.413 s  <<< FAILURE!
 java.lang.AssertionError: One or more test have failed --- Please reference test report for more details
-	at com.loanmart.test.LOSEditApplication.EditLOSApplication(LOSEditApplication.java:84)
+	at com.loanmart.test.LOSEditApplication.EditLOSApplication(LOSEditApplication.java:92)
 

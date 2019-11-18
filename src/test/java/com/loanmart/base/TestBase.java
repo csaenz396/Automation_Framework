@@ -1,5 +1,6 @@
 package com.loanmart.base;
 
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -33,6 +34,12 @@ import com.loanmart.utilities.TestUtil;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+
+/*##############################################################################*/
+/*  This class is in charged of setting up the browser driver when the 
+  testing suite starts, and terminating it when the testing suite is done.*/ 
+/*###############################################################################*/
 @Listeners(com.loanmart.listeners.CustomListeners.class)
 public class TestBase {
 
@@ -45,8 +52,15 @@ public class TestBase {
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public static String devEnvironment = System.getProperty("DEV_ENV");
 	public static Actions act;
+	public static String loanOfficerUsername = "testloanofficer";
+	public static String loanOfficerPassword = "Training19!";
 
-
+	/*##############################################################################*/
+	/*
+	 * This function gets called before the test suite start it will setup the
+	 * browser drivers and all of its settings
+	 */
+	/*###############################################################################*/
 	@BeforeSuite(alwaysRun = true)
 	public void setUpSuite() {
 		if (driver == null) {
@@ -76,7 +90,8 @@ public class TestBase {
 				//chromeOptions.addArguments("--disable-gpu");
 				//chromeOptions.addArguments("--no-sandbox");
 				//chromeOptions.addArguments("--allow-insecure-localhost");
-				chromeOptions.addArguments("--headless");
+				//chromeOptions.addArguments("--headless");
+				//chromeOptions.addArguments("--allow-running-insecure-content");
 				chromeOptions.addArguments("--window-size=1980,1080");
 				driver = new ChromeDriver(chromeOptions);
 				log.debug("Chrome Lunched.");
@@ -97,7 +112,12 @@ public class TestBase {
 		}
 
 	}
-	
+	/*##############################################################################*/
+	/*
+	 * Once the test has concluded, this function gets called to terminate the
+	 * browser drivers.
+	 */
+	/*###############################################################################*/
 	@AfterSuite(alwaysRun = true)
 	public void tearDownSuite() {
 		if (driver != null)

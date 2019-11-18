@@ -18,6 +18,11 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.loanmart.base.TestBase;
 import com.loanmart.listeners.CustomListeners;
 
+/*##############################################################################*/
+/*
+ * This class performs all actions needed to interact with webpage.
+ */
+/*###############################################################################*/
 public class Action {
 
 	
@@ -29,6 +34,7 @@ public class Action {
 		this.rptName = rptName;
 	}
 	
+	//returns webElement of By path
 	public WebElement webElement(By by) {
 		try {
 			if (isElementVisible(by, "" + by, "noDisplayPassVerified")) {
@@ -40,6 +46,7 @@ public class Action {
 		}
 	}
 	
+	//checks to see if an element if visible
 	public boolean isElementVisible(By by, String message, String... noDisplayPassVerified) {
 
 		if (isElementPresent(by, message, "noDisplayPassVerified")) {
@@ -61,6 +68,7 @@ public class Action {
 			return false;
 	}
 	
+	//clicks a link
 	public void clickLink(By by, String linkText) {
 		if (isTextVisible(by, linkText)) {
 			webElement(by).click();
@@ -69,7 +77,7 @@ public class Action {
 		}
 	}
 	
-
+	//checks to see if an element is present
 	public boolean isElementPresent(By by, String message, String... noDisplayPassVerified) {
 
 		try {
@@ -93,7 +101,8 @@ public class Action {
 			return false;
 		}
 	}
-
+	
+	//enters data in a textbox field
 	public void setTextBox(By by, String value, String textBoxName) {
 		if (isElementPresent(by, textBoxName, "noDisplayPassVerified")) {
 			if (textBoxName.equals("MobileNumber") || textBoxName.equals("HomeNumber") || textBoxName.equals("SSN")) {
@@ -108,6 +117,7 @@ public class Action {
 		}
 	}
 
+	//selects an item from a drop down list.  If not found it throws a Assert. fail and stops the testing suite
 	public void setDropDownFailPass(By by, String value, String dropDownName, String failMessage) {
 		WebElement dropdown = webElement(by);
 		Select select = new Select(dropdown);
@@ -127,6 +137,7 @@ public class Action {
 
 	}
 
+	//selects an item from a drop down list.  If not found it does not throw an exception but reports as a fail step in the report
 	public void setDropDown(By by, String value, String dropDownName) {
 		WebElement dropdown;
 		dropdown = webElement(by);
@@ -148,6 +159,7 @@ public class Action {
 
 	}
 
+	//click a button
 	public void clickButton(By by, String buttonName) {
 		if (isElementPresent(by, buttonName, "noDisplayPassVerified")) {
 			webElement(by).click();
@@ -156,12 +168,14 @@ public class Action {
 		}
 	}
 
+	//waits for a page to load based on the element to be clickable By path
 	public void waitForPageLoad(By by) {
 		TestBase.log.debug("Waiting for visibility of => " + by.toString());
 		TestBase.wait.until(ExpectedConditions.elementToBeClickable(by));
 		TestBase.log.debug("Is now visibile => " + by.toString());
 	}
 
+	//checks if an element is not visible
 	public boolean isNotElementVisible(By by, String message, String... noDisplayPassVerified) {
 
 		try {
@@ -200,6 +214,7 @@ public class Action {
 			return false;
 	}
 
+	//checks if text is not visible
 	public boolean isNotTextVisible(By by, String text, String... noDisplayPassVerified) {
 		try {
 			if (TestBase.driver.findElement(by).isDisplayed()) {
@@ -234,10 +249,12 @@ public class Action {
 		}
 	}
 
+	//returns the text of a webelement 
 	public String getWebElementText(By by) {
 		return webElement(by).getText();
 	}
 	
+	//clicks on a button as soon as it becomes clickable.
 	public void clickButtonWhenClickable(By by, String buttonName) {
 		TestBase.log.info("Waiting to be clickable => " + buttonName);
 		TestBase.wait.until(ExpectedConditions.elementToBeClickable(by));
@@ -247,6 +264,7 @@ public class Action {
 		CustomListeners.testLocal.log(LogStatus.INFO, "Clicked Button => " + buttonName);
 	}
 
+	//checks if two strings are equal or not.
 	public Boolean verifyEquals(String expected, String actual) {
 		if (!actual.equals(expected)) {
 			TestUtil.captureScreenshot(rptName);
@@ -267,6 +285,7 @@ public class Action {
 
 	}
 	
+	//checks if two strings are NOT equal
 	public boolean verifyNotEquals(String expected, String actual) {
 		if(actual.equals(expected)) {
 			TestUtil.captureScreenshot(rptName);
@@ -283,6 +302,7 @@ public class Action {
 		}
 	}
 	
+	//checks to see if string contains substring
 	public boolean verifyContains(String subString, String completeString) {
 		if(completeString.contains(subString)) {
 			TestBase.log.debug("Verified "+completeString+" --contains => "+subString);
@@ -297,6 +317,8 @@ public class Action {
 		}
 	}
 	
+	//clicks on a dropdown list and then selects one item from the list
+	//simulating the human approach to selecting an item from a dropdown
 	public void setDropDown_ng(By by, String value, String dropDownName) {
 		try {
 			webElement(by).click();
@@ -318,6 +340,7 @@ public class Action {
 
 	}
 	
+	//gets the string value of a textbox
 	public String getTextBox(By by) {
 		String value = webElement(by).getAttribute("value");
 		TestBase.log.info("Got Textbox value => " + by.toString() + " = " + value);
@@ -360,21 +383,28 @@ public class Action {
 		return handles;
 	}
 	
+	//returns the current window handle
 	public String getCurrentWindowHandle() {
 		return TestBase.driver.getWindowHandle();
 	}
+	
+	//navigates to another url
 	public void navigateToAnotherPage(String url) {
 		TestBase.driver.navigate().to(url);
 	}
 	
+	//gets the URL of the current page
 	public String getCurrentURL() {
 		return TestBase.driver.getCurrentUrl();
 	}
 	
+	//closes the current window handle
 	public void closeCurrentWindowHandle() {
 		TestBase.driver.close();
 	}
 	
+	//screenshot function that takes status, message and the screenshot name. 
+	//Uses testutil class to capture screenshot
 	public void takeScreentShot(String status, String message, String screenShotName) {
 		
 		switch(status.toLowerCase()) {
@@ -401,11 +431,14 @@ public class Action {
 			CustomListeners.testLocal.log(LogStatus.ERROR, "INVALID STATUS ARGUMENT");
 		}
 	}
+	
+	//resizes browser window
 	public void resizeWin(WebDriver driver) {
 		((JavascriptExecutor) driver).executeScript("window.resizeTo(1980,1080)");
 		//TestBase.js.executeScript("window.resizeTo(1980,1080)");
 	}
 	
+	//checks a checkbox
 	public void checkCheckBox(By by, String checkboxName) {
 		try {
 			webElement(by).click();
@@ -422,6 +455,7 @@ public class Action {
 		}
 	}
 	
+	//checks to see if a checbox is selected or not
 	public boolean isCheckBoxChecked(By by, String checkBoxName) {
 		if(webElement(by).isSelected()) {
 			return true;

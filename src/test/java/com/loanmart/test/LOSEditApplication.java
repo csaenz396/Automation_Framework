@@ -1,6 +1,7 @@
 package com.loanmart.test;
 import java.util.HashMap;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -39,7 +40,7 @@ public class LOSEditApplication extends TestBase {
 	
 	@BeforeTest(groups = {"ApplyAndEdit","EditLOS", "Regression"})
 	public void setUpClass() {
-		testURL = https+devEnvironment+config.getProperty("baseurl_los")+ "ael/lookup";
+		testURL = https+loanOfficerUsername+":"+loanOfficerPassword+"@"+devEnvironment+config.getProperty("baseurl_los")+ "ael/lookup";
 		log.debug("Navigated to => " + testURL);
 		accountLookupPage = new AccountLookupPage(driver,suiteName);
 		vehiclePage = new VehiclePage(driver,suiteName);
@@ -54,7 +55,14 @@ public class LOSEditApplication extends TestBase {
 	
 	@BeforeMethod(groups = {"ApplyAndEdit","EditLOS", "Regression"})
 	public void launchBrowser() {
+		System.out.println(testURL);
 		driver.get(testURL);
+		//driver.get("https://testloanofficer:Training19!@qa.los.800loanmart.com/ael/lookup");
+		//driver.switchTo().alert();
+		//driver.findElement(By.id("Username")).sendKeys(loanOfficerUsername);
+		//driver.findElement(By.id("Password")).sendKeys(LoanOfficerPasswordPassword);
+		//driver.switchTo().alert().accept();
+		//driver.switchTo().defaultContent();
 	}
 	
 	@AfterMethod(groups = {"ApplyAndEdit","EditLOS", "Regression"})

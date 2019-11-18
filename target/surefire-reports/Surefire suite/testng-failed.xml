@@ -13,6 +13,7 @@
           <include name="setUpClass"/>
           <include name="ApplicationSubmissionCCB"/>
           <include name="launchBrowser"/>
+          <include name="tearDownSuite"/>
           <include name="setUpSuite"/>
         </methods>
       </class> <!-- com.loanmart.test.CCBApplicationSubmission -->
@@ -21,6 +22,7 @@
           <include name="EditLOSApplication" invocation-numbers="0"/>
           <include name="setUpClass"/>
           <include name="launchBrowser"/>
+          <include name="tearDownSuite"/>
           <include name="failureCheckup"/>
           <include name="setUpSuite"/>
         </methods>
