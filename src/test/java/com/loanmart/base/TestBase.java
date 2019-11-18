@@ -90,8 +90,8 @@ public class TestBase {
 				//chromeOptions.addArguments("--disable-gpu");
 				//chromeOptions.addArguments("--no-sandbox");
 				//chromeOptions.addArguments("--allow-insecure-localhost");
-				//chromeOptions.addArguments("--headless");
 				//chromeOptions.addArguments("--allow-running-insecure-content");
+				chromeOptions.addArguments("--headless");
 				chromeOptions.addArguments("--window-size=1980,1080");
 				driver = new ChromeDriver(chromeOptions);
 				log.debug("Chrome Lunched.");
