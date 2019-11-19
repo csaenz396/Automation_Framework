@@ -123,5 +123,13 @@ public class AddressPage {
 	public void copyPhysicalAddressButtonCLick() {
 		action.clickButton(byCopyPhysicalAddressButton, "CopyPhysicalAddressButton");
 	}
+	
+	public boolean verifyAssertEquals(String expected, String actual) {
+		
+		if(action.verifyEquals(expected, actual))
+			return true;
+		else
+			return false;
+	}
 
 }

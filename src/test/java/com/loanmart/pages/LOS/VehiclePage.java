@@ -283,4 +283,19 @@ public class VehiclePage{
 				.click();
 	}
 	
+	public boolean verifyAssertEquals(String expected, String actual) {
+		
+		if(action.verifyEquals(expected, actual))
+			return true;
+		else
+			return false;
+	}
+	
+	public boolean verifyAssertContains(String subString, String completeString) {
+		if(action.verifyContains(subString, completeString))
+			return true;
+		else
+			return false;
+	}
+	
 }
