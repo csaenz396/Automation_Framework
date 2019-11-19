@@ -40,7 +40,7 @@ public class CCBApplicationSubmission extends TestBase{
 	
 
 	
-	@BeforeTest(groups = {"ApplyAndEdit","CCB"})
+	@BeforeTest(groups = {"ApplyAndEdit","CCB", "Regression"})
 	public void setUpClass() {
 		rowIndex = 0;
 		testURL = https+devEnvironment+config.getProperty("baseurl_mainwebsite")+ "application/application";
@@ -53,7 +53,7 @@ public class CCBApplicationSubmission extends TestBase{
 		successPage = new SuccessPage(driver, suiteName);
 	}
 	
-	@BeforeMethod(groups = {"ApplyAndEdit","CCB"})
+	@BeforeMethod(groups = {"ApplyAndEdit","CCB", "Regression"})
 	public void launchBrowser() {
 		driver.get(testURL);
 	}
@@ -65,7 +65,7 @@ public class CCBApplicationSubmission extends TestBase{
 	 * }
 	 */
 	
-	@Test(groups = {"ApplyAndEdit","CCB"}, enabled = true, dataProviderClass = TestUtil.class, dataProvider= "dp")
+	@Test(groups = {"ApplyAndEdit","CCB", "Regression"}, enabled = true, dataProviderClass = TestUtil.class, dataProvider= "dp")
 	public void ApplicationSubmissionCCB( HashMap<String, String> data ) throws InterruptedException  {
 
 		

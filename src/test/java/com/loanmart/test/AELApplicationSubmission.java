@@ -15,6 +15,7 @@ import com.loanmart.pages.mainwebsite.ContactInformationPage;
 import com.loanmart.pages.mainwebsite.CustomizeYourOfferPage;
 import com.loanmart.pages.mainwebsite.SuccessPage;
 import com.loanmart.pages.mainwebsite.VehicleInformationPage;
+import com.loanmart.utilities.ExcelReader;
 import com.loanmart.utilities.TestUtil;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -29,10 +30,12 @@ public class AELApplicationSubmission extends TestBase {
 	private String testURL;
 	private String https = "https://";
 	public static String suiteName = "ApplicationSubmissionAEL";
+	private int rowIndex;
+	private String loanNumber;
 	
-	@BeforeTest(groups = "AEL")
+	@BeforeTest(groups = {"AELApplyAndEdit", "AEL", "Regression"})
 	public void setUpClass() {
-
+		rowIndex = 0;
 		testURL = https+devEnvironment+config.getProperty("baseurl_mainwebsite")+ "application/application";
 
 		log.debug("Navigated to => " + testURL);
@@ -43,19 +46,22 @@ public class AELApplicationSubmission extends TestBase {
 		successPage = new SuccessPage(driver, suiteName);
 	}
 	
-	@BeforeMethod(groups = "AEL")
+	@BeforeMethod(groups = {"AELApplyAndEdit","AEL", "Regression"})
 	public void launchBrowser() {
 		driver.get(testURL);
 	}
 	
-	@Test(groups = "AEL", enabled = true, dataProviderClass = TestUtil.class, dataProvider = "dp")
+	@Test(groups = {"AELApplyAndEdit","AEL", "Regression"}, enabled = true, dataProviderClass = TestUtil.class, dataProvider = "dp")
 	public void ApplicationSubmissionAEL( HashMap<String, String> data ) throws InterruptedException {
-		CustomListeners.testLocal.setDescription("AEL Submission Application -- "+data.get("State"));
+
 		contactInformation(data);
 		vehicleInformation(data);
 		addressInformation(data);
 		customizeYourOfferPage();
 		successPage();
+		rowIndex++;
+		CustomListeners.testLocal.setDescription("AEL Submission Application -- "+data.get("State")+"--"+loanNumber);
+		ExcelReader.addLoanNumber(rowIndex, "ApplicationSubmissionAEL", loanNumber);
 
 	}
 	
@@ -158,6 +164,7 @@ public class AELApplicationSubmission extends TestBase {
 		successPage.waitForSuccessPageLoad();
 		log.debug("Inside Success Page");
 		CustomListeners.testLocal.log(LogStatus.INFO, "---  SUCCESS PAGE STARTED  ---");
+		loanNumber = successPage.getLoanNumber();
 		Assert.assertTrue(successTextVisibilitySuccessPage());
 		Assert.assertNotEquals("", successPage.getLoanNumber());
 		CustomListeners.testLocal.log(LogStatus.INFO, "---  SUCCESS PAGE COMPLETED  ---");

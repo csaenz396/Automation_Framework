@@ -1,5 +1,6 @@
 com\loanmart\test\LOSEditApplication.class
 com\loanmart\pages\LOS\AdditionalInfoPage.class
+com\loanmart\test\AELLOSEditApplication.class
 com\loanmart\listeners\CustomListeners.class
 com\loanmart\action\Action.class
 com\loanmart\pages\mainwebsite\SuccessPage.class

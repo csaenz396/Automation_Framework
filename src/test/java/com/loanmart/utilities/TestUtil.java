@@ -78,6 +78,8 @@ public class TestUtil{
 		String testName;
 		if(m.getName() == "EditLOSApplication")
 			testName = "ApplicationSubmissionCCB";
+		else if(m.getName() == "AELEditLOSApplication")
+			testName = "ApplicationSubmissionAEL";
 		else
 			testName = m.getName();
 		

@@ -147,5 +147,13 @@ public class AdditionalInfoPage {
 	public String getEmployerZip() {
 		return action.getTextBox(byEmployerZip);
 	}
+	
+	public boolean verifyAssertEquals(String expected, String actual) {
+		
+		if(action.verifyEquals(expected, actual))
+			return true;
+		else
+			return false;
+	}
 
 }
