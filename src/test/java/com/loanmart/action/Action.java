@@ -321,10 +321,14 @@ public class Action {
 	//simulating the human approach to selecting an item from a dropdown
 	public void setDropDown_ng(By by, String value, String dropDownName) {
 		try {
+			Thread.sleep(2000);
 			webElement(by).click();
 			Thread.sleep(100);
-			TestBase.driver.findElement(By.xpath("//div[@class='cdk-overlay-pane']//span[contains(text(),'" + value + "')]"))
-					.click();
+			String path = "//div[@class='cdk-overlay-pane']/div//span[contains(text(),'"+value+"')]";
+			System.out.println(path);
+			//TestBase.driver.findElement(By.xpath("//div[@class='cdk-overlay-pane']//span[contains(text(),'" + value + "')]"))
+					//.click();
+			TestBase.driver.findElement(By.xpath(path)).click();
 			TestBase.log.info("Selected from Dropdown => " + dropDownName + " = " + value);
 			CustomListeners.testLocal.log(LogStatus.INFO, "Selected from Dropdown => " + dropDownName + " = " + value);
 		} catch (org.openqa.selenium.NoSuchElementException e) {

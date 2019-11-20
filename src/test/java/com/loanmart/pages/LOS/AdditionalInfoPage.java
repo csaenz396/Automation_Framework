@@ -28,7 +28,8 @@ public class AdditionalInfoPage {
 		action.waitForPageLoad(byReasonForLoan);
 	}
 			
-	By byReasonForLoan = By.xpath("//*[@formcontrolname='loanReason']");
+	//By byReasonForLoan = By.xpath("//*[@formcontrolname='loanReason']");
+	By byReasonForLoan =  By.xpath("//form[@id='additionalInfoForm']/div/div[1]/p-panel/div/div[@role='region']/div/div/div[1]/mat-form-field//mat-select[@role='listbox']");
 	public void setReasonForLoan(String value ) {
 		action.setDropDown_ng(byReasonForLoan, value, "ReasonForLoan");
 	}
