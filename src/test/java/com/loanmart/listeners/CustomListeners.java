@@ -50,7 +50,7 @@ public class CustomListeners implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult arg0) {
-
+		testLocal = reps.startTest(arg0.getName());
 		testLocal.log(LogStatus.SKIP, " SKIPPED the test : "+arg0.getName());
 		reps.endTest(testLocal);	
 		reps.flush();

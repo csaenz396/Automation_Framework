@@ -17,6 +17,7 @@ com\loanmart\utilities\TestUtil.class
 com\loanmart\base\TestBase.class
 com\loanmart\utilities\ExtentManager.class
 com\loanmart\test\AELApplicationSubmission.class
+com\loanmart\test\SomeNewTest.class
 com\loanmart\mainwebsite\ApplyForLoan.class
 com\loanmart\pages\mainwebsite\ContactInformationPage.class
 com\loanmart\pages\LOS\VehiclePage.class
