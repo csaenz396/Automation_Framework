@@ -206,7 +206,8 @@ public class Action {
 			return true;
 		}
 	}
-
+	
+	//check if text is visible
 	public boolean isTextVisible(By by, String text) {
 		if (isElementVisible(by, text, "noDisplayPassVerified")) {
 			return verifyEquals(text, getWebElementText(by));

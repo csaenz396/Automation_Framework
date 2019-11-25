@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,35 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.test.AELApplicationSubmission" hash-for-method="ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)">ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.test.AELLOSEditApplication" hash-for-method="AELEditLOSApplication">AELEditLOSApplication</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,6 +100,16 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.test.AELLOSEditApplication" hash-for-method="AELEditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)">AELEditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.test.AELApplicationSubmission" hash-for-method="ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)">ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.loanmart.test.CCBApplicationSubmission" hash-for-method="ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)">ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)</a> <!-- method navigator-link -->
@@ -150,45 +132,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.loanmart.test.AELApplicationSubmission</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)">
-                  </a> <!-- ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...) -->
-                  <span class="method-name">ApplicationSubmissionAEL</span>
-                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000, PaidOff=Yes, LoanNumber=4643402, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=11/12/1978, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D SUV FWD - Base, GrossMonthlyIncome=5000, Color=White, Terms=Yes, CarYear=2016, City=Calabasas, EmployeeTitle=SSI / Benefits, State=California, Running=Yes, MonthsAtEmployer=5, LastName=Alderson, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=California, DoYouHaveAnAutomobile=Yes, FICO=787, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Retired / Benefits, GrossIncome=5000, LivedMonths=4, FirstName=Marc, ZipCode=91302, LivedYears=10, LicensePlate=QATEST01, HowLongHaveYouOwnedThisCar=Yes, OtherIncome=5000, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=8189794827, SSN=666367098, CarMake=Acura, CarModel=RDX, MobileNumber=8188766573, StreetAddress=4050 Old Topanga Canyon Rd, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=SSI / Benefits})</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.loanmart.test.AELApplicationSubmission.vehicleInformation(AELApplicationSubmission.java:107)
-	at com.loanmart.test.AELApplicationSubmission.ApplicationSubmissionAEL(AELApplicationSubmission.java:58)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.loanmart.test.AELLOSEditApplication</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AELEditLOSApplication">
-                  </a> <!-- AELEditLOSApplication -->
-                  <span class="method-name">AELEditLOSApplication</span>
-                  <div class="stack-trace">java.lang.Throwable: Method AELLOSEditApplication.AELEditLOSApplication(java.util.HashMap)[pri:0, instance:com.loanmart.test.AELLOSEditApplication@548e7350] depends on not successfully finished methods in group &quot;AEL&quot;
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-skipped -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -200,7 +143,39 @@
                   <a name="EditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)">
                   </a> <!-- EditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...) -->
                   <span class="method-name">EditLOSApplication</span>
-                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4643546, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Parkland, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Choate, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=791, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Thomas, ZipCode=33076, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666222165, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=12264 NW 73RD, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC})</span>
+                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4643598, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Parkland, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Choate, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=791, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Thomas, ZipCode=33076, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666222165, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=12264 NW 73RD, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loanmart.test.AELLOSEditApplication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AELEditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)">
+                  </a> <!-- AELEditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...) -->
+                  <span class="method-name">AELEditLOSApplication</span>
+                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000, PaidOff=Yes, LoanNumber=4643597, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=11/12/1978, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D SUV FWD - Base, GrossMonthlyIncome=5000, Color=White, Terms=Yes, CarYear=2016, City=Calabasas, EmployeeTitle=SSI / Benefits, State=California, Running=Yes, MonthsAtEmployer=5, LastName=Alderson, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=California, DoYouHaveAnAutomobile=Yes, FICO=787, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Retired / Benefits, GrossIncome=5000, LivedMonths=4, FirstName=Marc, ZipCode=91302, LivedYears=10, LicensePlate=QATEST01, HowLongHaveYouOwnedThisCar=Yes, OtherIncome=5000, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=8189794827, SSN=666367098, CarMake=Acura, CarModel=RDX, MobileNumber=8188766573, StreetAddress=4050 Old Topanga Canyon Rd, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=SSI / Benefits})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loanmart.test.AELApplicationSubmission</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)">
+                  </a> <!-- ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...) -->
+                  <span class="method-name">ApplicationSubmissionAEL</span>
+                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000, PaidOff=Yes, LoanNumber=4643402, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=11/12/1978, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D SUV FWD - Base, GrossMonthlyIncome=5000, Color=White, Terms=Yes, CarYear=2016, City=Calabasas, EmployeeTitle=SSI / Benefits, State=California, Running=Yes, MonthsAtEmployer=5, LastName=Alderson, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Rent, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=California, DoYouHaveAnAutomobile=Yes, FICO=787, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Retired / Benefits, GrossIncome=5000, LivedMonths=4, FirstName=Marc, ZipCode=91302, LivedYears=10, LicensePlate=QATEST01, HowLongHaveYouOwnedThisCar=Yes, OtherIncome=5000, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=8189794827, SSN=666367098, CarMake=Acura, CarModel=RDX, MobileNumber=8188766573, StreetAddress=4050 Old Topanga Canyon Rd, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=SSI / Benefits})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,7 +191,7 @@
                   <a name="ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)">
                   </a> <!-- ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...) -->
                   <span class="method-name">ApplicationSubmissionCCB</span>
-                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4643403, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Parkland, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Choate, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=791, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Thomas, ZipCode=33076, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666222165, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=12264 NW 73RD, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC})</span>
+                  <span class="parameters">({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000, PaidOff=Yes, LoanNumber=4643546, ESignedConsent=Yes, YearsAtEmployer=5, DoYouHaveAnotherCar=Yes, DOB=12/12/2000, AreYouAbleToProvideProofBankAccount=Yes, CarStyle=4D Sedan 3.6L - Premium, GrossMonthlyIncome=4000, Color=Blue, Terms=Yes, CarYear=2016, City=Parkland, EmployeeTitle=Tech, State=Florida, Running=Yes, MonthsAtEmployer=8, LastName=Choate, ReasonForLoan=Pleasure, ActiveMilitary=Yes, TextTerms=Yes, Ownership=Own, DoYouDriveThisCarToWork=Yes, StateTitle=Yes, DriverLicenseNumber=QATEST01, DriverLicenseState=Florida, DoYouHaveAnAutomobile=Yes, FICO=791, AreYouAbleToProvideProofOfInsurance=Yes, IncomeType=Employed, GrossIncome=4000, LivedMonths=2, FirstName=Thomas, ZipCode=33076, LivedYears=4, LicensePlate=ABC1234, HowLongHaveYouOwnedThisCar=6, OtherIncome=0, WillYouBeAbleToDriveYourCar=Yes, HomeNumber=818553212, SSN=666222165, CarMake=Cadillac, CarModel=ATS, MobileNumber=8185551231, StreetAddress=12264 NW 73RD, ThirdPartiesConsent=Yes, TitleStatus=Clean, EmployerName=LoanMart INC})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -364,26 +339,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EditLOSApplication')
-data.setCell(0, 2, 'com.loanmart.test.LOSEditApplication')
-data.setCell(0, 3, 102004);
+data.setCell(0, 1, 'AELEditLOSApplication')
+data.setCell(0, 2, 'com.loanmart.test.AELLOSEditApplication')
+data.setCell(0, 3, 99552);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ApplicationSubmissionCCB')
-data.setCell(1, 2, 'com.loanmart.test.CCBApplicationSubmission')
-data.setCell(1, 3, 38475);
+data.setCell(1, 1, 'EditLOSApplication')
+data.setCell(1, 2, 'com.loanmart.test.LOSEditApplication')
+data.setCell(1, 3, 82811);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'ApplicationSubmissionAEL')
 data.setCell(2, 2, 'com.loanmart.test.AELApplicationSubmission')
-data.setCell(2, 3, 5085);
+data.setCell(2, 3, 61170);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AELEditLOSApplication')
-data.setCell(3, 2, 'com.loanmart.test.AELLOSEditApplication')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'ApplicationSubmissionCCB')
+data.setCell(3, 2, 'com.loanmart.test.CCBApplicationSubmission')
+data.setCell(3, 3, 22035);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -443,74 +418,87 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">3977 ms</span>
+                <span class="method-start">4076 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.loanmart.test.AELLOSEditApplication</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">3984 ms</span>
+                <span class="method-start">4088 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.loanmart.test.CCBApplicationSubmission</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">4004 ms</span>
+                <span class="method-start">4104 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.loanmart.test.LOSEditApplication</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">4005 ms</span>
+                <span class="method-start">4104 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.loanmart.test.AELApplicationSubmission</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">4579 ms</span>
+                <span class="method-start">4741 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">ApplicationSubmissionAEL({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)</span>
-                <span class="method-start">7318 ms</span>
+                <span class="method-start">9734 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.loanmart.test.CCBApplicationSubmission</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">13052 ms</span>
+                <span class="method-start">71513 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ApplicationSubmissionCCB({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)</span>
-                <span class="method-start">13964 ms</span>
+                <span class="method-start">72633 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loanmart.test.AELLOSEditApplication</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">95080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AELEditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=Yes, Email=random@email.com, MortgageRent=1200, CarMileage=40000...)</span>
+                <span class="method-start">100011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">failureCheckup</span>
+                <span class="method-start">199918 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.loanmart.test.LOSEditApplication</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">52908 ms</span>
+                <span class="method-start">199961 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">EditLOSApplication({HowLongHaveYouBeenInYourCurrentJob=5, Email=qa@800loanmart.com, MortgageRent=800, CarMileage=25000,...)</span>
-                <span class="method-start">57776 ms</span>
+                <span class="method-start">204282 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">failureCheckup</span>
-                <span class="method-start">160132 ms</span>
+                <span class="method-start">287444 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.loanmart.test.AELApplicationSubmission</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownSuite</span>
-                <span class="method-start">160151 ms</span>
+                <span class="method-start">287469 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
